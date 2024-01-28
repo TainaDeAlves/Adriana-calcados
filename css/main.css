@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Alice', serif;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
 }
 
 :root {
@@ -16,6 +17,8 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
 
 }
@@ -138,10 +141,7 @@
 }
 
 .vermais {
-   
-    padding-top: 65px;
-    padding-bottom: 30px;
-    color: black;
+    padding: 45px 25px;
     font-size: 20px;
 
 }
@@ -149,9 +149,59 @@
 .card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
-.cardprocao img{
-border-radius: 35px;
+
+.cardprodutos {
+    border: 3px solid #7C7F7F;
+    border-radius: 20px;
+    padding: -15px;
+}
+
+.cardprodutos img {
+    border: 3px solid #7C7F7F;
+    border-radius: 15px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.estrela {
+    padding: 5px 0px;
+}
+
+.descricao a {
+    text-align: right;
+    background-color: var(--primaria);
+    margin-left: 85px;
+    padding: 2px 8px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+#secaocategorias{
+   margin-bottom: 65px;
+    margin-top: 65px;
+    padding-top: 25px;
+    background: #E3E8E8;
+    
+}
+.listacategorias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.categorias img{
+  margin:15px 0px ;
+    border-radius: 200px;
+}
+.modalidade{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
 }
