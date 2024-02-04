@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Alice', serif;
-    font-family: 'Open Sans', sans-serif;
     color: var(--text);
 }
 
@@ -12,6 +10,13 @@
     --primaria: #3CC845;
     --secundaria: #D7AC8F;
     --text: #2d2d2d;
+}
+
+body {
+
+    font-family: 'Alice', serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1
 }
 
 .container {
@@ -87,6 +92,7 @@
     border: none;
     outline: none;
     margin: 0px 15px;
+    background-color: #f1f1f1;
 }
 
 .formicone button {
@@ -151,12 +157,17 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+ padding-bottom: 65px;
+    
 }
+
 
 .cardprodutos {
     border: 3px solid #7C7F7F;
     border-radius: 20px;
     padding: -15px;
+    
+    
 }
 
 .cardprodutos img {
@@ -183,25 +194,30 @@
     border-radius: 15px;
     font-size: 14px;
 }
-#secaocategorias{
-   margin-bottom: 65px;
-    margin-top: 65px;
+
+#secaocategorias {
+    margin-bottom: 65px;
+    margin-top: 5px;
     padding-top: 25px;
     background: #E3E8E8;
-    
+
 }
-.listacategorias{
+
+.listacategorias {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 45px 0px;
 }
-.categorias img{
-  margin:15px 0px ;
+
+.categorias img {
+    margin: 15px 0px;
     border-radius: 200px;
 }
-.modalidade{
+
+.modalidade {
     text-align: center;
     font-size: 20px;
     padding: 10px 15px;
 }
+
