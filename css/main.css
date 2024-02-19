@@ -399,11 +399,11 @@ body {
     margin-left: -110px;
 }
 
-.titulonovidade {
+.tituloblog {
     margin: 0 auto;
 }
 
-.titulonovidade h2 {
+.tituloblog h2 {
     font-family: 'playfair display';
     font-size: 75px;
     font-weight: 600;
@@ -417,7 +417,7 @@ body {
 }
 
 .manchetesnovidade h3 {
-    font-family: "Displafair Play";
+    font-family: 'playfair display';
     font-weight: 500;
     font-size: 40px;
 }
@@ -431,34 +431,99 @@ body {
 
 #ultimosblocos {
     display: flex;
+
 }
 
-
-#bordacompartilhar {
-  
-    position: relative;
-
+#borda3 {
     margin-top: -45px;
     margin-left: -15px;
+    padding: 0px 35px;
+
+    position: relative;
+
 
 }
 
-.titulocompartilhar { 
-     display: flex;
-    font-size: 45px;
+#titulocompartilhar h2 {
+    position: absolute;
+    margin-left: -330px;
     
+}
+
+.conteudocompartilhar {
+
+    max-width: 620px;
+    padding: 25px 125px 125px 125px;
+}
+
+.bordapublicar {
+    border: solid 5px var(--secundaria);
+    padding: 5px;
+    position: relative;
+    margin-left: -75px;
+
+}
+
+.perfil {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    margin-top: -235px;
+
+}
+
+.fotoperfil {
+
+    height: 40px;
+    width: 40px;
+    border-radius: 80px;
+
+}
+
+.opiniao p {
+    font-size: 14px;
+    padding-left: 10px;
+    color: var(--text);
+}
+
+.interagir {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+}
+
+
+.usuriocomentario {
+    display: flex;
     align-items: center;
-    
-    
-}
-
-.titulocompartilhar h2 {
-margin-left: 130px;
-font-family: "Displafair Play";
+    padding: 5px 0px;
+    margin-bottom: 15px;
+    background-color: #D7AC8F;
 
 }
 
+.escrevercomentario p {
+    display: flex;
+    padding: 0px 5px;
 
+}
+
+.bordafaq{
+    border: solid 5px var(--secundaria);
+    border-radius: 45px;
+    position: relative;
+    margin-top: 145px;
+    margin-left: -155px;
+    padding: 185px;
+}
+
+.titulofaq{
+    position: absolute;
+    font-family: 'playfair display';
+    font-size: 55px;
+    font-weight: 500px;
+    margin-top: -240px;
+}
 
 
 
