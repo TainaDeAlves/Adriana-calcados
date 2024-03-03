@@ -213,6 +213,7 @@ body {
 .categorias img {
     margin: 15px 0px;
     border-radius: 200px;
+    border: var(--secundaria) 3px dashed;
 }
 
 .modalidade {
@@ -255,9 +256,20 @@ body {
     font-size: 17px;
 }
 
+.modeloindica{
+    display: flex;
+    
+    position: absolute;
+    margin-left: 265px;
+    margin-top: -367px;
+  height: 430px;
+   
+}
+
 #botaotopo {
     display: flex;
     justify-content: right;
+  
 }
 
 #topo {
@@ -265,7 +277,6 @@ body {
     border: solid 3px var(--secundaria);
     border-radius: 15px;
     padding: 5px 10px;
-    margin-right: 5px;
     background-color: #EFE2DA;
     color: var(--primaria);
 
@@ -436,8 +447,9 @@ body {
 
 #borda3 {
     margin-top: -45px;
-    margin-left: -15px;
+    margin-left: -5px;
     padding: 0px 35px;
+    
 
     position: relative;
 
@@ -453,7 +465,7 @@ body {
 .conteudocompartilhar {
 
     max-width: 620px;
-    padding: 25px 125px 125px 125px;
+    padding: 25px 125px 125px 108px;
 }
 
 .bordapublicar {
@@ -491,6 +503,9 @@ body {
     gap: 15px;
     padding: 10px 0px;
 }
+.coracao{
+   padding: 0px 5px;
+}
 
 
 .usuriocomentario {
@@ -508,22 +523,78 @@ body {
 
 }
 
+
+
 .bordafaq{
     border: solid 5px var(--secundaria);
     border-radius: 45px;
     position: relative;
     margin-top: 145px;
-    margin-left: -155px;
-    padding: 185px;
+    margin-left: -115px;
+    
+    
 }
-
 .titulofaq{
     position: absolute;
     font-family: 'playfair display';
     font-size: 55px;
     font-weight: 500px;
-    margin-top: -240px;
+    margin-top: -60px;
+    margin-left: 230px;
 }
+
+.subtitulo{
+    
+    margin: 0 auto;
+    font-family: 'playfair display';
+
+    font-size: 22.5px;
+    font-weight: 500;
+    
+    
+}
+
+#botaofaq{
+    display: flex;
+    justify-content: right;
+}
+.subtitulo h3{
+text-align: center;
+padding: 15px  185px 50px 185px;
+margin:0 auto;
+
+}
+.borda5{
+    display: flex;
+    justify-content: center;
+ 
+   padding-left: 75px;
+   padding-bottom: 45px;
+}
+
+.perfilfaq{
+    border: solid 3px #EFE2DA;
+    max-width: 450px;
+    margin-bottom: 195px;
+   padding: 25px 125px;
+   
+}
+.seila{
+    display: flex;
+}
+.fotofaq{
+    
+    height: 50px;
+    width: 49px;
+    border-radius: 150px;
+    justify-content: center;
+}
+
+.nomeusuario{
+    
+    
+}
+
 
 
 

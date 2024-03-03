@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:ital,wght@0,500;1,400&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -530,43 +530,48 @@
     </section>
 
     <section id="news">
-      <div class="banner">
 
+      <div class="container">
 
-        <div class="container">
-
-          <div class="secaotitulos">
-            <h2>Receba nossa news</h2>
+        <div class="secaotitulos">
+          <h2>Receba nossa news</h2>
+        </div>
+        <form class="formnews" method="post" action="#">
+          <div class="formcaixa">
+            <label for="Nome">
+              <input name="Nome" type="text" id="Nome" placeholder="Nome:">
+            </label>
           </div>
-          <form class="formnews" method="post">
-            <div class="formcaixa">
-              <label for="Nome">
-                <input name="Nome" type="text" id="Nome" placeholder="Nome:">
-              </label>
-            </div>
 
-            <div class="formcaixa">
-              <label for="email">
-                <input name="email" type="email" id="email" placeholder="Email:">
-              </label>
-            </div>
+          <div class="formcaixa">
+            <label for="email">
+              <input name="email" type="email" id="email" placeholder="Email:">
+            </label>
+          </div>
 
-            <div class="formcaixa">
-              <label for="tel">
-                <input name="tel" type="tel" id="tel" placeholder="Celular:">
-              </label>
-            </div>
-           
+          <div class="formcaixa">
+            <label for="tel">
+              <input name="tel" type="tel" id="tel" placeholder="Celular:">
+            </label>
+          </div>
 
-            <button type="submit">Quero receber</button>
-          </form>
+          <button type="submit">Quero receber</button>
 
+        </form>
+      </div>
+
+      
+      <div class="container">
+        <div class="modeloindica">
+          <img src="./img/fotos/modelo.adriana1.png">
         </div>
       </div>
-     <!-- <img src="./img/fotos/modelo.png"> -->
+
+
       <div id="botaotopo" class="container">
         <a id="topo" href="#"><i class="fa-solid fa-arrow-up fa-xl"></i> Voltar ao topo</a>
       </div>
+
     </section>
 
   </main>
@@ -594,7 +599,7 @@
         <li><a href="http://wa.me/551499999999?text=Olá, Tudo Bem"><i class="fa-brands fa-whatsapp fa-xl"></i>
             (14) 9999-9999</a></li>
         <li><a href="tel:1434333333"><i class="fa-solid fa-phone fa-xl"></i> (14) 34333333 </a></li>
-        <li><a href="mailto:contato@boockmenow.com.br"><i class="fa-regular fa-envelope fa-xl"></i> 
+        <li><a href="mailto:contato@boockmenow.com.br"><i class="fa-regular fa-envelope fa-xl"></i>
             Adrianacalcados@gmail.com</a></li>
       </ul>
     </div>
@@ -607,9 +612,9 @@
         <a href="https://instagram.com"> <i class="fa-brands fa-instagram fa-xl"></i></a>
       </div>
       <div class="link-app">
-       <img src="./img/fotos/google-play.png" alt="App no Google Play">  
+        <img src="./img/fotos/google-play.png" alt="App no Google Play">
 
-       <img src="./img/fotos/app-store.png" alt="Baixe Nosso APP Apple Store"> 
+        <img src="./img/fotos/app-store.png" alt="Baixe Nosso APP Apple Store">
       </div>
 
     </div>
