@@ -1,0 +1,261 @@
+@import url("main.css");
+
+
+
+#tituloblog {
+    margin-top: 55px;
+}
+
+
+.carrocelblog {
+    margin-top: 25px;
+    display: flex;
+}
+
+.legenda {
+    background-color: var(--secundaria);
+    border-radius: 30px 30px 0px 0px;
+    height: 50px;
+    position: relative;
+}
+
+.legenda p {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: var(--texttitulo);
+    font-weight: 600;
+}
+
+.cardposts {
+
+    border: solid 5px var(--secundaria);
+    border-radius: 40px;
+    width: 400px;
+    height: 655px;
+
+}
+
+.cardposts img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+
+    border-radius: 30px 30px 10px 10px;
+    margin-top: -50px;
+
+}
+
+.mesagemblog {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+#cardsemlegenda {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-top: -50px;
+}
+
+.sombra {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    bottom: 60%;
+    background: #0000008e;
+    width: 10vw;
+    height: 15vw;
+    transform: translateX(-50%) scale(3, 0.35);
+    filter: blur(4vw);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ss {
+    display: flex;
+    gap: 20px;
+}
+
+.backgrondprevia {
+    padding: 35px;
+    background-color: #e3e8e89e;
+    margin-bottom: 65px;
+
+}
+
+.bordaprevia {
+    border: solid 5px #EFE2DA;
+    padding: 25px;
+    width: 750px;
+    height: 30%;
+}
+
+.usuarioduvida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dadosusuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotousuario {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.fotousuario img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nomeusuario {
+    padding-left: 15px;
+}
+
+.pergunta {
+    border: solid 4px var(--secundaria);
+    padding: 10px;
+    margin: 10px 0px;
+    max-width: 450px;
+    width: 450px;
+    height: 30%;
+}
+
+.mesagemusuario {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.resposta {
+    max-width: 345px;
+    margin-top: 15px;
+
+}
+
+.backgrondnavegacao {
+    height: 12px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--secundaria);
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+#barradenavegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 35px;
+}
+
+#barradenavegacao ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#barradenavegacao ul li a {
+    font-family: var(--texttitulo);
+    font-size: 30px;
+
+}
+
+#barradenavegacao ul li a:hover {
+    background-color: var(--secundaria);
+    border-radius: 10px;
+    padding: 5px 30px;
+    text-align: center;
+    color: #ffffff;
+  
+
+}
+
+#secaoartigos {
+    display: flex;
+    justify-content: center;
+    margin: 85px 5px;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.cardartigo {
+    flex-grow: 1;
+}
+
+.bordaartigo {
+    border: solid var(--secundaria) 3px;
+    border-radius: 3px;
+    width: 320px;
+
+}
+
+.legendacard {
+    background-color: var(--secundaria);
+    width: 100%;
+    height: 45px;
+}
+
+.legendacard p {
+    font-family: var(--texttitulo);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.fotocardartigo {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.fotocardartigo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.botaoartigo {
+    position: relative;
+    margin-top: -5px;
+    display: flex;
+}
+
+.botaoartigo a {
+    color: #ffffff;
+    font-family: var(--texttitulo);
+    font-size: 30px;
+    text-align: right;
+    width: 322px;
+    height: 55px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.tituloartigo {
+display: flex;
+justify-content: center;
+   
+    width: 310px;
+}
+
+.tituloartigo p {
+ text-align: center;
+    font-family: var(--texttitulo);
+    font-size: 25px;
+    font-weight: 600;
+}
