@@ -14,13 +14,13 @@
 }
 
 :root {
-    --textcorp: "open sans";
+    --textcorpo: "open sans";
     --texttitulo: "playfair display";
 }
 
 body {
     background-color: #f1f1f1;
-    font-family: var(--textcorp);
+    font-family: var(--textcorpo);
 }
 
 .container {
@@ -28,19 +28,14 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-
-
 }
-
-
 
 #cabecalho {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 35px;
-
 }
 
 #menu ul {
@@ -50,10 +45,11 @@ body {
 
 #menu ul li {
     padding-right: 45px;
-    font-size: 20px;
+    
 }
 
 #menu ul li a {
+    font-size: 20px;
     color: #2d2d2d;
 }
 
@@ -131,8 +127,8 @@ body {
     background-color: #D3CAC5;
     border-radius: 10px;
     padding: 8px 35px;
-    font-family: 'Alice ';
-    font-size: 23px;
+    font-family: var(--texttitulo);
+    font-size: 25px;
 }
 
 
@@ -158,6 +154,7 @@ body {
 .vermais {
     padding: 45px 25px;
     font-size: 20px;
+    
 
 }
 

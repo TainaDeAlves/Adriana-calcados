@@ -103,56 +103,10 @@
     background-color: var(--secundaria);
 }
 
-.unidade {
-    display: flex;
-    align-items: center;
-}
-
-.unidade h2 {
-    font-family: var(--texttitulo);
-    font-size: 2rem;
-    margin-left: 25px;
-    font-weight: 500;
-}
-
-.campounidade {
-    border: solid 2px var(--secundaria);
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95px;
-    height: 25px;
-    margin-left: 15px;
-    margin-top: 7px;
-}
-
-.unidade input {
-    width: 40px;
-    align-items: center;
-    background-color: transparent;
-    outline: none;
-    border: none;
-}
-
-.unidade input[type="text"] {
-    text-align: center;
-}
-
-.unidade button {
-    border: none;
-    background-color: var(--secundaria);
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .avaliacaoEbotao {
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
     align-items: center;
     margin: 50px 25px;
 }
@@ -165,6 +119,7 @@
     background-color: var(--primaria);
     padding: 10px 35px;
     border-radius: 25px;
+ margin-right: 50px;
 }
 
 .botaocomprar a {
@@ -172,7 +127,7 @@
 }
 
 .comentario {
-    background-color: #c1caca12;
+    background-color: #c1caca4b;
     margin: 55px 0px;
 }
 

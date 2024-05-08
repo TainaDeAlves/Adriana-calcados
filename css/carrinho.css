@@ -1,0 +1,311 @@
+@import url("main.css");
+@import url("perfilcalcado.css");
+
+#nomecarrinho {
+    font-family: var(--texttitulo);
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.envio p {
+    font-size: 22px;
+}
+
+#informaçoescompra {
+    margin-top: 65px;
+}
+
+.dadosenvio {
+    background-color: #7c7f7f33;
+    padding-top: 25px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.remetente {
+    display: flex;
+    margin-left: 55px;
+    align-items: end;
+}
+
+.caminhao {
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-right: 55px;
+}
+
+.dadosremetente p {
+    padding-bottom: 10px;
+}
+
+.taxaentrega {
+    margin-right: 55px;
+    font-weight: 700;
+}
+
+#enderecoentrega {
+    margin-top: 35px;
+}
+
+.subtitulo {
+    font-family: var(--texttitulo);
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.endereco {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dadosdestinatario {
+    margin-left: 65px;
+}
+
+.dadosdestinatario p {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.editar {
+    margin-right: 35px;
+}
+
+.cupom {
+    margin-top: 25px;
+    margin-bottom: 55px;
+}
+
+.cupom img {
+    position: relative;
+    margin-bottom: -95px;
+    height: 120px;
+    margin-left: 95px;
+}
+
+.backgroundcupom {
+    height: 75px;
+    background-color: #7c7f7f33;
+}
+
+.Inserircupom {
+    display: flex;
+    margin-right: 10px;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.Inserircupom p {
+    font-family: var(--texttitulo);
+    font-size: 35px;
+    padding-right: 100px;
+}
+
+.produtocarrinho {
+    display: flex;
+    border: dashed 3.1px var(--secundaria);
+    border-radius: 25px;
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.imgcarrinho {
+    position: relative;
+    width: 310px;
+    height: 300px;
+    border-radius: 25px;
+    z-index: 2;
+    transform: scale(1.03, 1.03);
+}
+
+.imgcarrinho img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: solid 5px var(--secundaria);
+}
+
+.detalhesprudutocarrinho {
+    width: 65%;
+    margin-top: 25px;
+    margin-left: 55px;
+    padding-right: 15px;
+
+}
+
+.produtovalor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textcarrinho {
+    font-family: var(--texttitulo);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.valorcarrinho p {
+    padding-bottom: 5px;
+    font-family: var(--textcorpo);
+    font-size: 40px;
+}
+
+.tamanhopretendido {
+    display: flex;
+    align-items: center;
+}
+
+.tamanho {
+    border: solid black 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    font-family: var(--textcorpo);
+    padding: 6px;
+    margin-bottom: 20px;
+}
+
+.unidade {
+    display: flex;
+    align-items: center;
+}
+
+.unidade p {
+    font-family: var(--texttitulo);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.campounidade {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95px;
+    height: 25px;
+    margin-left: 15px;
+    margin-top: 7px;
+    align-items: center;
+}
+
+.unidade input {
+    width: 40px;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.unidade input[type="text"] {
+    text-align: center;
+}
+
+.unidade button {
+    border: solid 1px black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.resumoelixeira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.resumoelixeira p {
+    font-size: 20px;
+}
+
+.lixeira a i {
+    font-size: 50px;
+}
+
+#comfimacaodados p {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+#comfimacaodados p strong {
+    font-size: 37px;
+}
+
+#pagamento {
+    margin-top: 55px;
+}
+.formasdepagamento{
+    margin-bottom: 75px;
+}
+.formasdepagamento h2 {
+    font-family: var(--texttitulo);
+    font-size: 45px;
+    font-weight: 500;
+    border-bottom: solid 15px #7c7f7f33;
+}
+
+.formasdepagamento ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.formasdepagamento ul li {
+    font-family: var(--texttitulo);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: none;
+    border-top: 100px solid #7c7f7f33;
+    border-width: 25px;
+
+}
+#creditoform{
+    width: 60%;
+}
+
+#creditoform label{
+   
+    font-size: 25px;
+}
+#pagamento form input[type="radio"]{
+    width: 30px;
+   height: 20px;
+
+}
+.cartoes{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  margin: 25px 0px;
+}
+#creditoform p{
+font-size: 20px;
+margin: 15px 0px;
+
+padding-bottom: 10px;
+border-bottom: 1px black solid;
+
+}
