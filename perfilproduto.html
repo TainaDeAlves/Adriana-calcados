@@ -17,6 +17,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./css/perfilcalcado.css">
 </head>
 
@@ -58,14 +60,32 @@
         </div>
 
         <div class="linha"></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
 
-        <div class="carrocelimg">
-          <img src="./img/fotos/salto2.png" class="img1" >
-          <img src="./img/fotos/salto2.png" class="img2" >
-          <img src="./img/fotos/salto2.png"class="img3">
-        </div> 
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fotos/salto2.png" class="img1">
+            </div>
 
-       
+
+          </div>
+
+        </div>
 
 
         <div class="descricaoproduto">
@@ -269,9 +289,31 @@
     </section>
   </main>
 
-</body>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<!-- <footer id="rodape">
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       effect: "coverflow",
+       grabCursor: true,
+       centeredSlides: true,
+       slidesPerView: "auto",
+       coverflowEffect: {
+         rotate: 15,
+         stretch: 0,
+         depth: 300,
+         modifier: 1,
+         slideShadows: true,
+       },
+       loop: true,
+     });
+   </script>
+ 
+
+
+
+  <!-- <footer id="rodape">
 
   <div id="listarodape" class="container">
 
@@ -323,6 +365,6 @@
 
 
 </footer> -->
-
+</body>
 
 </html>
