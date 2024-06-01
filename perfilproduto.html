@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./css/perfilcalcado.css">
 </head>
@@ -26,35 +26,41 @@
   <header id="cabecalho" class="container">
 
     <div class="logo">
-      <img src="./img/fotos/logo.png" alt="logo" width="115">
+      <img src="./img/fotos/logo1.png" alt="logo" height="85">
     </div>
     <nav id="menu">
       <ul>
         <li><a href="index.html">Paginá inicial</a></li>
         <li><a href="contato.html">Contato</a></li>
-        <li><a href="ajuda.html">Ajuda</a></li>
+        <li><a href="ajuda_faq.html">Ajuda</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="cadastrar.html">Cadastrar</a></li>
+
       </ul>
     </nav>
     <div class="icones">
+      <a href="favoritos.html"><i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i></a>
+
       <a href="carrinho.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
 
-      <a href="login.html" id="botaologin"><i class="fa-solid fa-user fa-lg"></i>Login</a>
+      <a href="login.html" id="botaologin"><i class="fa-solid fa-user fa-lg"></i>Login / Cadastrar</a>
     </div>
 
   </header>
-  <main>
-    <div id="perfilproduto" class="container">
-      <section>
+  <main class="container">
+    <form action="" method="post" id="perfilproduto">
+
+      <section id="calcadoinformacao">
+
         <div class="calcado">
           <div class="tipocalcado">
 
             <p>Salto Social: Beira-Rio</p>
-            <i class="fa-solid fa-heart fa-2xl" style="color: #cb1a1a;"></i>
+            <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
           </div>
           <div class="valor">
             <p><strong>$ 85,50</strong> </p>
+
+            <p class="parcelas">Ou até 3x de $28,50</p>
           </div>
 
         </div>
@@ -82,234 +88,418 @@
               <img src="./img/fotos/salto2.png" class="img1">
             </div>
 
-
           </div>
-
         </div>
 
 
-        <div class="descricaoproduto">
-          <h2 class="tituloperfproduto">Descrição</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet illo, natus ad placeat autem ab, harum quam eum earum non obcaecati
-            dolores et. Sunt reprehenderit corrupti voluptatum non maiores iusto!Eveniet illo,
-            dolores et. Sunt reprehenderit corrupti voluptatum non maiores iusto</p>
+        <section id="coresdisponiveis">
+          <h2> Cores Disponível</h2>
+          <div class="corescalcados">
+            <a href="perfilproduto.html">
+              <div class="calcadocor">
+                <div class="imgmodelocor">
+                  <img src="./img/fotos/salto2.png" alt="salto Alto">
+                </div>
+                <p>Bege</p>
+              </div>
+            </a>
+            <a href="perfilproduto.html">
+              <div class="calcadocor">
+                <div class="imgmodelocor">
+                  <img src="./img/fotos/salto2.png" alt="salto Alto">
+                </div>
+                <p>Prata</p>
+              </div>
+            </a>
+
+            <a href="perfilproduto.html">
+              <div class="calcadocor">
+                <div class="imgmodelocor">
+                  <img src="./img/fotos/salto2.png" alt="salto Alto">
+                </div>
+                <p>Dourado</p>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+
+        <div id="descricaocalcado">
+          <details>
+            <summary class="detalescalcado">
+              <h3>Descrição</h3>
+              <i class="fa-solid fa-chevron-right fa-2xl" style="color: #000000;"></i>
+            </summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Facere temporibus odio eos, veritatis qui dolore dicta esse dolores et
+              repellendus blanditiis laborum ipsam vel nesciunt corporis reiciendis perspiciatis ad beatae!</p>
+          </details>
+
+        </div>
+
+        <section id="tamanho">
+
+          <h2>Tamanho</h2>
+          <div class="radio-group">
+
+            <input type="radio" name="numeracao" id="numeracao33">
+            <label for="numeracao33">33</label>
+
+            <input type="radio" name="numeracao" id="numeracao34">
+            <label for="numeracao34">34</label>
+
+            <input type="radio" name="numeracao" id="numeracao35">
+            <label for="numeracao35">35</label>
+
+            <input type="radio" name="numeracao" id="numeracao36">
+            <label for="numeracao36">36</label>
+
+            <input type="radio" name="numeracao" id="numeracao37">
+            <label for="numeracao37">37</label>
+
+            <input type="radio" name="numeracao" id="numeracao38">
+            <label for="numeracao38">38</label>
+
+            <input type="radio" name="numeracao" id="numeracao39">
+            <label for="numeracao39">39</label>
+
+            <input type="radio" name="numeracao" id="numeracao40">
+            <label for="numeracao40">40</label>
+          </div>
+        </section>
+
+      </section>
+
+      <div id="guiatamanho">
+        <p><a href="guiadetamanho.html">Guia de Tamanhos</a></p>
+        <img src="./img/fotos/medida.png" height="30">
+      </div>
+
+      <div class="btnperfilproduto">
+        <button>Adicionar ao Carrinho</button>
+      </div>
+
+      </from>
+
+      <section id="comentariocompradores">
+        <div class="secaotitulos">
+          <h2>Comentarios</h2>
+          <div class="vermais">
+            <a href="vermaispcomentarios.html"><span> Ver Todos ></span> </a>
+          </div>
+
+        </div>
+        <div id="comentariosusuarios">
+          <div class="comentario">
+            <div class="usuario">
+              <div class="quemcomentou">
+                <img src="./img/fotos/modelo3.jpg" width="120">
+                <p>Tainá</p>
+              </div>
+
+              <div class="curtidas">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                (50)
+              </div>
+            </div>
+
+            <div class="cor_avaliacao">
+              <div>
+                <P>Cor: Preta</P>
+              </div>
+
+              <div class="estrelaavaliacao">
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+            </div>
+            <div class="textocomentario">
+              <p>Perfeito 😍, orem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quod recusandae totam excepturi ratione possimus, a eos. Dolores libero
+                dignissimos ducimus harum, quibusdam molestiae temporupti, recusandae
+                explicabo voluptas dolore</p>
+            </div>
+            <div class="fotosdacompra">
+              <div class="corescalcados">
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="comentario">
+            <div class="usuario">
+              <div class="quemcomentou">
+                <img src="./img/fotos/modelo3.jpg" width="120">
+                <p>Tainá</p>
+              </div>
+
+              <div class="curtidas">
+                <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                (50)
+              </div>
+            </div>
+
+            <div class="cor_avaliacao">
+              <div>
+                <P>Cor: Preta</P>
+              </div>
+
+              <div class="estrelaavaliacao">
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              </div>
+            </div>
+            <div class="textocomentario">
+              <p>Perfeito 😍, orem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quod recusandae totam excepturi ratione possimus, a eos. Dolores libero
+                dignissimos ducimus harum, quibusdam molestiae temporupti, recusandae
+                explicabo voluptas dolore</p>
+            </div>
+            <div class="fotosdacompra">
+              <div class="corescalcados">
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+
+                <a href="perfilproduto.html">
+                  <div class="calcadocor">
+                    <div class="imgmodelocor">
+                      <img src="./img/fotos/salto2.png" alt="salto Alto">
+                    </div>
+
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
 
       </section>
 
-      <div class="numeracao">
-        <h2 class="tituloperfproduto">Numeraçaõ</h2>
-        <ul>
-          <li>34</li>
-          <li>35</li>
-          <li>36</li>
-          <li>37</li>
-          <li>38</li>
-          <li>39</li>
-          <li>40</li>
-        </ul>
 
-      </div>
+      <section class="container">
 
-      <div class="unidade">
-        <h2>Unidade</h2>
-        <div class="campounidade">
-          <button name="botaomenos">-</button>
-          <input type="text" name="qntunidades" id="unidades">
-          <button name="botaomais">+</button>
-        </div>
-      </div>
-      <div class="avaliacaoEbotao">
-        <div class="estrelaperfilproduto">
-          <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>4.5
-        </div>
-        <div class="botaocomprar">
-          <a href="carrinho.html">Adicionara ao carrinho</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="linha"></div>
-    <div class="comentario">
-      <div id="usuario" class="container">
-        <div class="vermais"><a href="#"> Ver mais ></a></div>
-
-        <div class="usuariocomentando">
-          <div class="ss">
-            <div class="fotousuario">
-              <img src="./img/fotos/modelo3.jpg">
-            </div>
-            <div class="nomeusuario">
-              <p>Taina</p>
-            </div>
-          </div>
-          <i class="fa-solid fa-heart fa-2xl" style="color: #cb1a1a;"></i>
-        </div>
-        <div class="opiniao">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quod recusandae totam excepturi ratione possimus, a eos.
-            Dolores libero dignissimos ducimus harum, quibusdam molestiae tempore aperiam
-            corrupti, recusandae explicabo voluptas doloremque?uod recusandae
-            totam excepturi ratione possimus, a eos.
-            Dolores libero dignissimos ducimus harum, quibusdam molestiae tempore aperiam
-            corrupti, recusandae explicabo voluptas doloremque?
-          </p>
+        <div class="secaotitulos">
+          <h2>você pode gostar</h2>
         </div>
 
-      </div>
+        <div class="card">
 
-    </div>
-
-    <section class="container">
-
-      <div class="secaotitulos">
-        <h2>você pode gostar</h2>
-      </div>
-
-      <div class="card">
-
-        <!-- inicío card promoção -->
-        <a href="perfilproduto.html">
-          <div class="cardprodutos">
-            <div class="imgcard">
-              <img src="./img/fotos/salto2.png" alt="salto Alto">
-            </div>
-
-            <div class="descricao">
-              <p>Salto Alto</p>
-              <div class="preco">
-                R$:85,50
+          <!-- inicío card promoção -->
+          <a href="perfilproduto.html">
+            <div class="cardprodutos">
+              <div class="imgcard">
+                <img src="./img/fotos/salto2.png" alt="salto Alto">
               </div>
-              <div class="estrela">
-                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+              <div class="destaque">
+                <p>Promoção</p>
+              </div>
+              <div class="descricao">
+                <p>Salto Alto:</p>
+                <div class="preco">
+                  <div class="valorreal">
+                    <p>R$:155,00</p>
+                  </div>
+                  
+                  <p class="precodesconto">R$:85,50</p>
+                </div>
+                <div class="estrela">
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </div>
+
               </div>
 
             </div>
+          </a>
+          <!-- final card promoção -->
 
-          </div>
-        </a>
-        <!-- final do card promoção-->
+          <!-- inicío card promoção -->
+          <a href="perfilproduto.html">
+            <div class="cardprodutos">
+              <div class="imgcard">
+                <img src="./img/fotos/salto2.png" alt="salto Alto">
+              </div>
+              <div class="destaque">
+                <p>Lançamento</p>
+              </div>
+              <div class="descricao">
+                <p>Salto Alto:</p>
+                <div class="preco">
+                  <p >R$:85,50</p>
+                </div>
+                <div class="estrela">
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </div>
 
-        <!-- inicío card promoção -->
-        <div class="cardprodutos">
-          <div class="imgcard">
-            <img src="./img/fotos/salto2.png" alt="salto Alto">
-          </div>
-          <div class="descricao">
-            <p>Salto Alto</p>
-            <div class="preco">
-              R$:85,50
+              </div>
+
             </div>
-            <div class="estrela">
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          </a>
+          <!-- final card promoção -->
+
+          <!-- inicío card promoção -->
+          <a href="perfilproduto.html">
+            <div class="cardprodutos">
+              <div class="imgcard">
+                <img src="./img/fotos/salto2.png" alt="salto Alto">
+              </div>
+              <div class="destaque">
+                <p><img src="./img/fotos/cupom.png" alt="iconecupom">cupom</p>
+              </div>
+              <div class="descricao">
+                <p>Salto Alto:</p>
+                <div class="preco">
+                  <p >R$:85,50</p>
+                </div>
+                <div class="estrela">
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </div>
+
+              </div>
+
             </div>
+          </a>
+          <!-- final card promoção -->
 
-          </div>
-        </div>
-        <!-- final card promoção -->
+          <!-- inicío card promoção -->
+          <a href="perfilproduto.html">
+            <div class="cardprodutos">
+              <div class="imgcard">
+                <img src="./img/fotos/salto2.png" alt="salto Alto">
+              </div>
+              <div class="destaque">
+                <p>Frete Gratís</p>
+              </div>
+              <div class="descricao">
+                <p>Salto Alto:</p>
+                <div class="preco">
+                  <p >R$:85,50</p>
+                </div>
+                <div class="estrela">
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </div>
 
-        <!-- inicío card promoção -->
-        <div class="cardprodutos">
-          <div class="imgcard">
-            <img src="./img/fotos/salto2.png" alt="salto Alto">
-          </div>
-          <div class="descricao">
-            <p>Salto Alto</p>
-            <div class="preco">
-              R$:85,50
+              </div>
+
             </div>
-            <div class="estrela">
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+          </a>
+          <!-- final card promoção -->
+
+          <!-- inicío card promoção -->
+          <a href="perfilproduto.html">
+            <div class="cardprodutos">
+              <div class="imgcard">
+                <img src="./img/fotos/salto2.png" alt="salto Alto">
+              </div>
+              <div class="destaque">
+                <p>Lançamento</p>
+              </div>
+              <div class="descricao">
+                <p>Salto Alto:</p>
+                <div class="preco">
+                  <p >R$:85,50</p>
+                </div>
+                <div class="estrela">
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                </div>
+
+              </div>
+
             </div>
+          </a>
+          <!-- final do card promoção-->
 
-          </div>
-        </div>
-        <!-- final card promoção -->
-
-        <!-- inicio card promoção -->
-        <div class="cardprodutos">
-          <div class="imgcard">
-            <img src="./img/fotos/salto2.png" alt="salto Alto">
-          </div>
-          <div class="descricao">
-            <p>Salto Alto</p>
-            <div class="preco">
-              R$:85,50
-            </div>
-            <div class="estrela">
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- final card promoção -->
-
-        <!-- inicio card promoção -->
-        <div class="cardprodutos">
-          <div class="imgcard">
-            <img src="./img/fotos/salto2.png" alt="salto Alto">
-          </div>
-          <div class="descricao">
-            <p>Salto Alto</p>
-            <div class="preco">
-              R$:85,50
-            </div>
-            <div class="estrela">
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-              <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-            </div>
-
-          </div>
-
-        </div>
-        <!-- final card promoção -->
-      </div>
-
-    </section>
+      </section>
   </main>
 
-   <!-- Swiper JS -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-   <!-- Initialize Swiper -->
-   <script>
-     var swiper = new Swiper(".mySwiper", {
-       effect: "coverflow",
-       grabCursor: true,
-       centeredSlides: true,
-       slidesPerView: "auto",
-       coverflowEffect: {
-         rotate: 15,
-         stretch: 0,
-         depth: 300,
-         modifier: 1,
-         slideShadows: true,
-       },
-       loop: true,
-     });
-   </script>
- 
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 15,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+  </script>
+
 
 
 

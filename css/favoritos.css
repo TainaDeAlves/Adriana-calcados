@@ -1,0 +1,208 @@
+@import url(main.css);
+@import url(carrinho.css);
+
+.titulofavoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;padding-bottom: 55px;
+}
+
+.titulofavoritos h2 {
+    font-weight: 500;
+    font-family: var(--texttitulo);
+    font-size: 50px;
+    
+}
+
+.titulofavoritos i {
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.totalintens {
+    border-bottom: solid 2px var(--secundaria);
+    margin-bottom: 100px;
+}
+
+.totalintens p {
+    margin-left: 95px;
+    font-size: 30px;
+    font-family: var(--texttitulo);
+}
+
+.listaflitro ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border: dashed 1px var(--secundaria);
+    height: 60px;
+    padding: 0px 20px;
+}
+
+.listaflitro ul li {
+    display: flex;
+    align-items: center;
+    font-family: var(--texttitulo);
+    font-size: Clamp(20px, 2.1vw, 35px);
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    margin: 0px -20px;
+}
+
+.listaflitro ul li a {
+    width: 100%;
+}
+
+.listaflitro ul li:hover {
+    background-color: #d7ac8f55;
+}
+
+#produtofavorito {
+    margin: 50px 0px;
+}
+
+#prudutosintesfavoritos {
+    display: flex;
+}
+
+.itensfavoritos {
+    width: 75%;
+}
+
+.bordadoproduto {
+    border: dashed 4px var(--secundaria);
+    border-left: none;
+    border-radius: 0px 40px 40px 0px;
+    height: 305px;
+    position: relative;
+    margin-top: -302px;
+    margin-left: 280px;
+    max-width: 100%;
+    padding-left: 50px;
+}
+
+.produto {
+    margin-bottom: 55px;
+}
+
+.informacoesfavoritos {
+    height: 280px;
+    margin-top: 40px;
+}
+
+.informacoesfavoritos h3 {
+    font-family: var(--texttitulo);
+    font-weight: 300;
+    font-size: Clamp(20px, 2.5vw, 35px);
+    padding-left: 15px;
+}
+
+.informacoesfavoritos p {
+    font-size: Clamp(20px, 1vw, 25px);
+    margin: 10px 0px;
+}
+
+.precos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    margin-bottom: 25px;
+}
+
+.precos p {
+    font-size: Clamp(20px, 3vw, 40px);
+    font-weight: 300;
+}
+
+.precocomdesconto {
+    text-decoration: line-through;
+    color: rgb(199, 0, 40);
+}
+
+.adicionar_remover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botaoadicionar {
+    background-color: var(--secundaria);
+    width: 40%;
+    border-radius: 25px;
+}
+
+.botaoadicionar a {
+    display: flex;
+    justify-content: center;
+    font-size: Clamp(20px, 2vw, 35px);
+    color: #ffff;
+    font-family: var(--texttitulo);
+    text-align: center;
+}
+
+.mensagemesgotado {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.mensagemesgotado p {
+    font-size: Clamp(20px, 3vw, 40px);
+    color: rgb(199, 0, 40);
+}
+
+.lixeiraesgotadp {
+    text-align: right;
+    margin-right: 65px;
+    font-size: 25px;
+}
+
+.produtoparecido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.produtoparecido a {
+    border: solid black 2px;
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+.precosemdesconto p {
+    font-size: Clamp(20px, 3vw, 40px);
+    font-weight: 300;
+    margin: 30px;
+}
+
+#navdoflitro {
+    width: 25%;
+    display: flex;
+    justify-content: right;
+}
+
+.tiposdefavoritos {
+    list-style: none;
+    text-align: center;
+    border-right: 8px #d7ac8f63 solid;
+}
+
+.tiposdefavoritos li {
+    font-family: var(--texttitulo);
+    font-size: Clamp(20px, 1.8vw, 30px);
+    margin-bottom: 35px;
+    padding-right: 10px;
+}
+
+.tiposdefavoritos li a:hover {
+    border-bottom: solid 4px #7C7F7F;
+    padding-top: 25px;
+}
+.sugestoes{
+    margin: 55px 0px;
+    
+}

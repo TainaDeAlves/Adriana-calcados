@@ -10,16 +10,12 @@
     --primaria: #3CC845;
     --secundaria: #D7AC8F;
     --text: #2d2d2d;
-
-}
-
-:root {
     --textcorpo: "open sans";
     --texttitulo: "playfair display";
 }
 
 body {
-    background-color: #f1f1f1;
+    background-color: #ebe9e9;
     font-family: var(--textcorpo);
 }
 
@@ -32,7 +28,7 @@ body {
 
 #cabecalho {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 35px;
@@ -45,7 +41,6 @@ body {
 
 #menu ul li {
     padding-right: 45px;
-    
 }
 
 #menu ul li a {
@@ -69,7 +64,6 @@ body {
 
 #formpesquisa {
     display: flex;
-
 }
 
 #formpesquisa {
@@ -82,12 +76,10 @@ body {
     border: solid #2d2d2d 1px;
     padding: 4px 35px;
     border-radius: 35px;
-
 }
 
 .formicone i {
     justify-content: space-between;
-
 }
 
 .formicone input {
@@ -95,7 +87,7 @@ body {
     border: none;
     outline: none;
     margin: 0px 15px;
-    background-color: #f1f1f1;
+    background-color: transparent;
 }
 
 .formicone button {
@@ -109,7 +101,6 @@ body {
 }
 
 #carrocel {
-
     padding-top: 35px;
     margin: auto;
 }
@@ -119,7 +110,7 @@ body {
     justify-content: space-around;
     list-style: none;
     z-index: 99999;
-    margin-top: -46px;
+    margin-top: -55px;
     padding-bottom: 55px;
 }
 
@@ -131,31 +122,25 @@ body {
     font-size: 25px;
 }
 
-
 .secaotitulos {
     display: flex;
     justify-content: space-between;
     text-align: end;
-   
-
-
 }
 
 .secaotitulos h2 {
     height: 65px;
     border-left: 8px solid var(--primaria);
-    padding: 8px 15px;
-    font-family: 'Alice';
-    font-size: 50px;
+    padding-left: 8px;
+    font-family: var(--texttitulo);
+    font-size: Clamp(30px, 3.5vw, 50px);
     font-weight: 400;
     margin-bottom: 30px;
 }
 
 .vermais {
-    padding: 45px 25px;
-    font-size: 20px;
-    
-
+    margin: 50px 25px;
+    font-size: Clamp(16px, 2vw, 22px);
 }
 
 .card {
@@ -164,16 +149,13 @@ body {
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 65px;
-    gap: 20px;
+    gap: 15px;
     flex-grow: 1;
 }
 
 .cardprodutos {
     border: 4px solid #7C7F7F;
     border-radius: 30px;
-    padding: -15px;
-
-
 }
 
 .imgcard {
@@ -182,7 +164,6 @@ body {
 }
 
 .imgcard img {
-
     border: #7C7F7F 3px solid;
     border-radius: 25px;
     object-fit: cover;
@@ -190,33 +171,59 @@ body {
     width: 180px;
 }
 
-.descricao {
+.destaque p {
+    background-color: #7c7f7f8e;
+    height: 50px;
+    position: relative;
+    margin-top: -20px;
+    z-index: -9999;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.destaque p {
+    color: #ffff;
+    font-family: var(--texttitulo);
+    font-size: Clamp(16px, 2.5vw, 25px);
+    font-weight: 500;
+}
+
+.descricao {
     padding: 8px;
-    font-size: 15px;
+}
+.descricao p{
+    font-size: Clamp(16px, 1.2vw, 18px);
+}
+
+.destaque img {
+    width: 40px;
+}
+
+.preco {
+    display: flex;
+    gap: 5px;
+}
+
+.valorreal p {
+    color: #e71212;
+    text-decoration: line-through;
+}
+
+.precodesconto {
+    margin-top: 10px;
 }
 
 .estrela {
     padding: 5px 0px;
 }
 
-.descricao a {
-    text-align: right;
-    background-color: var(--primaria);
-    margin-left: 85px;
-    padding: 2px 8px;
-    border-radius: 15px;
-    font-size: 14px;
-}
-
 #secaocategorias {
-
     margin-bottom: 65px;
     margin-top: 5px;
     padding-top: 25px;
-    background: #E3E8E8;
-
+    background: #7c7f7f28;
     height: 400px;
 
 }
@@ -242,7 +249,7 @@ body {
     width: 150px;
     margin: 15px 0px;
     border-radius: 200px;
-    border: var(--secundaria) 3px dashed;
+    border: var(--secundaria) 3.5px dashed;
 }
 
 .modalidade {
@@ -251,66 +258,33 @@ body {
     padding: 10px 15px;
 }
 
-.formnews {
-
-    padding: 35px;
+#news {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.formcaixa {
-    padding: 5px;
-}
-
-.formcaixa input {
-    border: #D7AC8F dashed 2px;
-    width: 30%;
-    padding: 8px;
-    background-color: #f1f1f1;
+.clientenews input {
+    border: dashed 3px var(--secundaria);
     outline: none;
+    background-color: transparent;
+    width: 85%;
+    padding: 5px;
+    margin: 15px 0px;
 }
 
-::-webkit-input-placeholder {
-
-    color: var(--text);
-    font-size: 17px;
-    padding: 10px;
-}
-
-.formnews button {
-    margin: 15px 20px;
+#news button {
     border: solid 3px var(--secundaria);
     border-radius: 15px;
     padding: 5px 15px;
+    margin-right: 5px;
     background-color: #EFE2DA;
     color: var(--primaria);
-    font-size: 17px;
-}
-
-.modeloindica {
-    display: flex;
-
-    position: absolute;
-    margin-left: 265px;
-    margin-top: -367px;
-    height: 430px;
-}
-
-#botaotopo {
-    display: flex;
-    justify-content: right;
-}
-
-#topo {
-
-    border: solid 3px var(--secundaria);
-    border-radius: 15px;
-    padding: 5px 10px;
-    background-color: #EFE2DA;
-    color: var(--primaria);
+    font-size: 15px;
 }
 
 #rodape {
     border-top: solid 2px #C1CACA;
-    margin-top: 25px;
 }
 
 #listarodape {
@@ -327,7 +301,6 @@ body {
 }
 
 .colunarodape ul li {
-
     font-size: 1em;
     list-style: none;
     padding-top: 5px;
@@ -339,7 +312,6 @@ body {
 }
 
 .rede-sociais a {
-
     padding: 0px 5px;
 }
 
@@ -348,7 +320,6 @@ body {
 }
 
 .copyright {
-
     text-align: center;
     padding-top: 35px;
 }
