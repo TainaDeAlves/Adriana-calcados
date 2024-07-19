@@ -106,34 +106,34 @@
     padding-right: 100px;
 }
 
-.produtocarrinho {
+.bordaritem {
     display: flex;
     border: dashed 3.1px var(--secundaria);
-    border-radius: 25px;
     width: 85%;
+    border-radius: 25px;
     margin-bottom: 50px;
 }
 
 .imgcarrinho {
     position: relative;
-    width: 310px;
-    height: 300px;
+    width: 350px;
     border-radius: 35px;
     z-index: 2;
     transform: scale(1.03, 1.03);
 }
 
 .imgcarrinho img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 35px;
+    border-radius: 30px;
     border: solid 5px var(--secundaria);
 }
 
 .detalhesprudutocarrinho {
-    width: 650px;
-    margin-top: 25px;
+    max-width: 450px;
+    width: 85%;
+    margin-top: 20px;
     margin-left: 55px;
     padding-right: 15px;
 
@@ -221,7 +221,6 @@
     justify-content: center;
 }
 
-
 .resumoelixeira {
     display: flex;
     justify-content: space-between;
@@ -250,9 +249,11 @@
 #pagamento {
     margin-top: 55px;
 }
-.formasdepagamento{
+
+.formasdepagamento {
     margin-bottom: 75px;
 }
+
 .formasdepagamento h2 {
     font-family: var(--texttitulo);
     font-size: 45px;
@@ -280,69 +281,64 @@
     border-bottom: none;
     border-top: 100px solid #7c7f7f33;
     border-width: 25px;
-
 }
 
-.pagamentos p{
+.pagamentos p {
     font-size: 20px;
     margin: 30px 0px;
     padding-bottom: 10px;
     border-bottom: 1px black solid;
-   display: flex;
-   align-items: center;
- }
+    display: flex;
+    align-items: center;
+}
 
-
-
-#pagamento form label{
+#pagamento form label {
     font-size: 25px;
 }
-#pagamento form input[type="radio"]{
-    width: 30px;
-   height: 20px;
 
+#pagamento form input[type="radio"] {
+    width: 30px;
+    height: 20px;
 }
-.cartoes{
+
+.cartoes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 30%;
-  margin: 25px 0px;
+    margin: 25px 0px;
 }
 
-.opicaopagamento{
+.opicaopagamento {
     width: 60%;
-    
 }
-#boletoform label i{
-    
+
+#boletoform label i {
     font-size: 35px;
     margin-right: 10px;
-    
 }
-.butaocarrinho{
+
+.butaocarrinho {
     display: flex;
     justify-content: right;
     margin: 85px 0px;
 }
+
 .butaocarrinho button {
-  
- 
     background-color: var(--secundaria);
     border: none;
     border-radius: 35px;
     color: #ffff;
     font-family: var(--texttitulo);
     font-size: 30px;
-  width: 250px;
-  height: 45px;
+    width: 250px;
+    height: 45px;
 
 }
 
-
-.resumoelixeira input[type="number"]{
+.resumoelixeira input[type="number"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }

@@ -1,0 +1,123 @@
+@import url(./main.css);
+
+
+.titulosobrenos h1 {
+    font-size: Clamp(20px, 5vw, 80px);
+      
+    font-family: var(--texttitulo);
+    font-weight: 400;
+    padding-top: 25px;
+    margin-left: 50px;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textsobrenos {
+    width: 60%;
+}
+
+.logo2 img {
+    height: 250px;
+    width: 250px;
+}
+
+#jornada {
+    margin: 50px 0px;
+}
+
+.titulojornada {
+    text-align: center;
+    font-family: var(--texttitulo);
+    font-size: Clamp(20px, 3.5vw, 40px);
+}
+
+.titulojornada h1 {
+    font-weight: 400;
+}
+
+.imgjornada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0px;
+}
+
+.imgjornada img {
+    border: solid 2px black;
+    object-fit: cover;
+}
+
+.img1 {
+    width: 350px;
+    height: 550px;
+}
+
+.img2 {
+    margin: 0px 15px;
+    width: 450px;
+    height: 650px;
+}
+
+.img3 {
+    width: 350px;
+    height: 550px;
+}
+
+#visaomissaovalor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.borda {
+    border: solid var(--secundaria) 3px;
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+    padding: 25px;
+}
+
+#missao,
+#visao {
+    transform: translateY(250px);
+    margin-bottom:250px;
+}
+
+#missao {
+    position: relative;
+    margin-right: -35px;
+}
+
+#visao {
+    position: relative;
+    margin-left: -35px;
+}
+
+.tituloborda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--texttitulo);
+    font-size: Clamp(20px, 3.5vw, 40px);
+}
+
+.nossacoltura {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nossacoltura p {
+    font-size: Clamp(16px, 0.95vw, 20px);
+}
+.convitetext h2{
+  margin: 70px 0px;
+  text-align: center;
+  font-family: var(--texttitulo);
+  font-size: Clamp(20px, 3.5vw, 40px);
+}

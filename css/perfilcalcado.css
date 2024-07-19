@@ -200,9 +200,7 @@
     cursor: pointer;
 }
 
-.vermais span {
-    font-family: var(--texttitulo);
-}
+
 
 #comentariosusuarios {
     margin: 35px 0px;

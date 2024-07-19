@@ -4,14 +4,14 @@
 .titulofavoritos {
     display: flex;
     justify-content: center;
-    align-items: center;padding-bottom: 55px;
+    align-items: center;
+    padding-bottom: 55px;
 }
 
 .titulofavoritos h2 {
     font-weight: 500;
     font-family: var(--texttitulo);
     font-size: 50px;
-    
 }
 
 .titulofavoritos i {
@@ -72,25 +72,21 @@
     width: 75%;
 }
 
-.bordadoproduto {
-    border: dashed 4px var(--secundaria);
-    border-left: none;
-    border-radius: 0px 40px 40px 0px;
-    height: 305px;
-    position: relative;
-    margin-top: -302px;
-    margin-left: 280px;
-    max-width: 100%;
-    padding-left: 50px;
-}
-
 .produto {
     margin-bottom: 55px;
 }
 
+.bordaritemfavirito {
+    display: flex;
+    border: dashed 3.1px var(--secundaria);
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
 .informacoesfavoritos {
-    height: 280px;
     margin-top: 40px;
+    margin-left: 35px;
 }
 
 .informacoesfavoritos h3 {
@@ -202,7 +198,7 @@
     border-bottom: solid 4px #7C7F7F;
     padding-top: 25px;
 }
-.sugestoes{
+
+.sugestoes {
     margin: 55px 0px;
-    
 }

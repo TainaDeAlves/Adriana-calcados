@@ -1,0 +1,127 @@
+@import url(main.css);
+
+.titulologin h1 {
+    text-align: center;
+    font-family: var(--texttitulo);
+    font-size: Clamp(0.85vw, 45px, 3vw);
+    font-weight: 400;
+}
+
+#formacesso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.acesso {
+    width: 45%;
+}
+
+.loginuser i {
+    background: var(--secundaria);
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 37px;
+    font-size: Clamp(1vw, 25px, 3vw);
+}
+
+.loginuser {
+    border: black solid 2px;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 35px 0px;
+}
+
+.loginuser input {
+    height: 95%;
+    width: 90%;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding-left: 15px;
+    font-size: Clamp(0.85vw, 20px, 3vw);
+}
+
+#formacesso p a {
+    color: rgba(56, 56, 186, 0.808);
+    text-decoration: underline;
+    font-size: Clamp(1vw, 18px, 3vw);
+}
+
+.lembrete {
+    display: flex;
+    align-items: center;
+    margin: 40px 4px;
+    font-size: Clamp(1vw, 18px, 3vw);
+}
+
+.lembrete input[type="checkbox"] {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    margin-right: 15px
+}
+
+.botaoentrar {
+    display: flex;
+    justify-content: right;
+    margin: 35px 0px;
+}
+
+.botaoentrar button {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 35%;
+    padding: 8px 0px;
+    cursor: pointer;
+    font-size: Clamp(1vw, 17px, 2vw);
+}
+
+.rotacadastro a {
+    background-color: var(--secundaria);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    color: #fff;
+    font-size: Clamp(1vw, 23px, 3vw);
+}
+#acessoplataforma{
+    margin: 50px 0px;
+}
+#acessoplataforma h1{
+    text-align: center;
+    font-size: Clamp(1vw, 35px, 3vw);
+  font-weight: 400;
+  font-family: var(--texttitulo);
+  margin-bottom: 35px;
+}
+.outroaceso button{
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+    width: 100%;
+    background-color: transparent;
+    height: 55px;
+    border-radius: 30px;
+    padding-left: 15px;
+    font-size: Clamp(1vw, 20px, 2vw);
+}
+.outroaceso button img{
+    margin-right: 15px;
+    width:8%;
+    
+}
+.outroaceso button i{
+    margin-right: 15px; 
+}
