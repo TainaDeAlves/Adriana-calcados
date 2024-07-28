@@ -1,0 +1,244 @@
+@import url("../css/main.css");
+@import url("../css/carrinho.css");
+@import url("../css/favoritos.css");
+/* começo da pagina do usuario admin */
+.tituloprincipal h1 {
+    font-family: var(--texttitulo);
+    font-weight: 500;
+    text-align: center;
+    font-size: clamp(30px, 3vw, 55px);
+}
+
+#listadeusuarios {
+    margin: 85px 0px;
+}
+
+.tituloadmin {
+    margin-left: 22%;
+}
+
+.tituloadmin h2 {
+    font-family: var(--texttitulo);
+    font-weight: 500;
+    width: 80%;
+    font-size: clamp(25px, 3vw, 35px);
+}
+
+.naveconteudo {
+    display: flex;
+    margin: 85px 0px;
+}
+
+.listadesecoes {
+    width: 25%;
+    margin-right: 15px;
+}
+
+.listadesecoes ul li {
+    margin: 25px 0px;
+    padding: 8px 12px;
+}
+
+.listadesecoes ul li:hover {
+    background-color: #004bad3a;
+    border-radius: 10px;
+    width: 100%;
+    padding: none;
+    height: none;
+}
+
+.listadesecoes ul li a {
+    display: flex;
+    font-size: clamp(14px, 1.1vw, 20px);
+}
+
+.listadoconteudo {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.avisoaoadmin {
+    margin-bottom: 35px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    background-color: #7c7f7f20;
+    height: auto;
+    padding: 10px;
+    width: auto;
+    margin: 35px 0px;
+}
+
+.dadosconteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+}
+
+.imgdocard img {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.dadosprincipais p {
+    margin: 12px 0px;
+    font-size: clamp(14px, 1.1vw, 20px);
+     overflow-wrap: break-word;
+   
+}
+
+.botoescrud {
+    height: 100%;
+    width: 20%;
+}
+
+.botaocrud {
+    font-size: clamp(11px, 1vw, 20px);
+    height: 25%;
+    padding: 8px 12px;
+    margin: 15px 0px;
+    border: solid 1px #fff;
+    border-radius: 15px;
+}
+
+.botaocrud a {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+}
+
+.botaocrud button {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: clamp(12px, 1vw, 20px);
+}
+
+.botaocrud i {
+    margin-right: 25px;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    width: auto;
+    margin: 35px 0px;
+}
+
+/* Final da pagina do usuario admin */
+
+
+/* começo da pagina produtos admin */
+
+.bordaconteudo {
+    display: flex;
+    border: solid 3.2px var(--secundaria);
+    border-radius: 35px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+
+.imgcounteudo {
+    position: relative;
+    width: 300px;
+    border-radius: 35px;
+    z-index: 2;
+    transform: scale(1.03, 1.05);
+}
+
+.imgcounteudo img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: solid 6px var(--secundaria);
+}
+
+.dadosinseridos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.dadoscadastrado {
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+ 
+}
+
+/* final da pagina produtos admin */
+
+/* começo da pagina atalhos admin */
+.atalhos {
+    margin-left: 25px;
+    position: relative;
+    width: 135px;
+    height: 135px;
+    border-radius: 35px;
+    z-index: 2;
+    transform: scale(1.03, 1.05);
+}
+
+.atalhos img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: dashed var(--secundaria) 3px;
+    border-radius: 50%;
+}
+
+
+/* final da pagina atalhos admin */
+
+
+
+/* final da pagina publicaçoes admin */
+
+.fotoconteudo{
+   
+    position: relative;
+    width: 185px;
+    height: 235px;
+    border-radius: 35px;
+    z-index: 2;
+    transform: scale(1.03, 1.05);
+}
+.fotoconteudo img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid var(--secundaria) 3px;
+    border-radius: 15px;
+}
+
+.fotopublicacao{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 35px;
+    z-index: 2;
+    transform: scale(1.03, 1.05);
+}
+
+.fotopublicacao img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+  
+}
+      

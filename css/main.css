@@ -105,6 +105,14 @@ body {
 #carrocel {
     padding-top: 35px;
     margin: auto;
+    width: 1140px;
+    height: auto;
+}
+#carrocel img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
 }
 
 .diferencial ul {
