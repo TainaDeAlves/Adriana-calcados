@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@
     --textcorpo: "open sans";
     --texttitulo: "playfair display";
 }
+
 
 body {
     background-color: #ebe9e9;
@@ -37,7 +39,6 @@ body {
 
 #menu ul {
     display: flex;
-    
 }
 
 #menu ul li {
@@ -333,3 +334,4 @@ body {
     text-align: center;
     padding-top: 35px;
 }
+

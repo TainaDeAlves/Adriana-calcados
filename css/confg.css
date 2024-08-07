@@ -1,0 +1,109 @@
+@import url("../css/main.css");
+@import url("../css/admin.css");
+
+.tituloconf h1 {
+    font-family: var(--texttitulo);
+    font-weight: 500;
+    font-size: clamp(30px, 3.5vw, 60px);
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#navconfg {
+    height: 155px;
+    margin: 55px 0px;
+}
+
+.subitem {
+    display: none;
+}
+
+.item.active .subitem {
+    display: block;
+}
+
+.item.active {
+    display: block;
+    border: 1px solid #3cc8453d;
+    border-radius: 15px;
+}
+
+.item p {
+    width: 100%;
+    padding: 7px 10px;
+    font-size: clamp(16px, 1.3vw, 20px);
+    cursor: pointer;
+}
+
+.item p:hover,
+.item.active p {
+    background-color: #3cc8453d;
+    border-radius: 15px;
+}
+
+.listaitens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subitem li {
+    margin: 10px 0px;
+    padding-left: 15px;
+}
+/*começo da pagina perfilusuario */
+.aviso {
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.aviso i {
+    margin-right: 10px;
+}
+
+.aviso p {
+    font-size: clamp(16px, 1.2vw, 20px);
+}
+
+#Perfilusuario {
+    margin: 35px 25px;
+}
+
+.listadedados {
+    margin: 15px 0px;
+}
+
+.listadedados h2 {
+    margin: 15px 0px;
+}
+
+.dadosuser li {
+    margin: 10px 0px;
+    font-size: clamp(16px, 1.2vw, 20px);
+}
+
+#notificacoes {
+    margin: 35px 25px;
+}
+
+#notificacoes h2 {
+    margin: 15px 0px;
+}
+
+#notificacoes p {
+    margin: 10px 0px;
+    font-size: clamp(16px, 1.2vw, 20px)
+}
+/*tremino da pagina perfilusuario */
+
+
+/*começo da pagina pedidocompra */
+
+.produtopedido{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*tremino da pagina pedidocompra */

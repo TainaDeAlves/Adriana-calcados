@@ -1,6 +1,7 @@
 @import url("../css/main.css");
 @import url("../css/carrinho.css");
 @import url("../css/favoritos.css");
+
 /* começo da pagina do usuario admin */
 .tituloprincipal h1 {
     font-family: var(--texttitulo);
@@ -207,7 +208,7 @@
 
 
 
-/* final da pagina publicaçoes admin */
+/* começo da pagina publicaçoes admin */
 
 .fotoconteudo{
    
@@ -241,4 +242,5 @@
     object-fit: contain;
   
 }
-      
+
+  /* final da pagina publicaçoes admin */
