@@ -66,42 +66,24 @@
 
             <ul class="listaitens">
                 <li class="item">
-                    <p>Perfil Usuario</p>
-                    <ul class="subitem">
-                        <li><a href="#Perfilusuario" class="subitem-link">Meus Dados</a></li>
-                        <li><a href="#notificacoes" class="subitem-link">Notificações</a></li>
-                    </ul>
+                    <p><a href="perfilusuario.html">Perfil Usuario</a></p>
+
                 </li>
                 <li class="item">
-                    <p>Pedidos e Compras</p>
-                    <ul class="subitem">
-                        <li><a href="#rastrear">Rastrear pedido</a></li>
-                        <li><a href="#">Historico de pedidos</a></li>
-                    </ul>
+                    <p><a href="pedido.html"> Status dos Pedidos</a></p>
                 </li>
 
                 <li class="item">
-                    <p>Pagamentos e Cartões</p>
-                    <ul class="subitem">
-                        <li><a href="#">Cartões</a></li>
-                        <li><a href="#">Historico de Pagamentos</a></li>
-                    </ul>
+                    <p><a href="cartoes.html">Cartões</a></p>
                 </li>
 
                 <li class="item">
-                    <p>
-                        Termos e Condições
-                    </p>
+                    <p><a href="historicopedido.html">Historico de pedidos</a></p>
                 </li>
 
                 <li class="item">
-                    <p>Configurações e Preferenciais</p>
-                    <ul class="subitem">
-                        <li><a href="#">Informações pessoais</a> </li>
-                        <li><a href="#">Endereções</a></li>
-                        <li><a href="#">Atualizar Senha</a> </li>
-                        <li><a href="#">Notificações</a></li>
-                    </ul>
+                    <p><a href="confepreferencia.html">Configurações e Preferenciais</a></p>
+
                 </li>
             </ul>
         </nav>
@@ -113,28 +95,105 @@
                 <h2>Status do Pedido</h2>
             </div>
 
-            
 
-                <div class="produtopedido">
-                    <div class="imgpedido">
-                        <img src="../../img/salto2.png" alt="foto Calçado" height="220">
-                    </div>
-                    <div class="dadopedido">
-                        <p><strong>Marca:</strong> Beira-Rio.</p>
-                        <p><strong>Data do pedido:</strong> 14/07/2024 ás 20:00.</p>
-                        <p><strong>Status:</strong> O pedido está sendo preparado.</p>
-                        <p><strong>Estimativa de entrega</strong> 18/07/2024</p>
-                        <p><strong></strong></p>
 
-                    </div>
+            <div class="produtopedido">
+                <div class="imgpedido">
+                    <img src="../../img/salto2.png" alt="foto Calçado" height="220">
                 </div>
-          
+                <div class="dadopedido">
+                    <p><strong>Marca:</strong> Beira-Rio</p>
+                    <p><strong>Cor:</strong> Preto</p>
+                    <p><strong>Numeração:</strong> 34</p>
+                    <p><strong>valor:</strong> 85,50</p>
+                    <p class="description"><strong>Descrição:</strong> Vestibulum ante ipsum primis in faucibus orci
+                        luctus et ultrices posuere cubilia curae; Nullam mollis nunc nec nunc faucibus, a sagittis
+                        ligula porta. Ut sed ligula sit amet enim gravida varius. Aliquam erat volutpat.
+
+                    </p>
+
+                </div>
+            </div>
+
+
             <div class="status">
+                <div class="dadopedido">
+                    <p><strong>Pedido:</strong> 456231</p>
+                    <p><strong>Pedido realizado por:</strong> Tainá Souza</p>
+                    <p><strong>Pedido realizado em:</strong> 14/07/2024 as 20:00</p>
+                    <p><strong>Contato:</strong> taina@gmail.com</p>
+
+                </div>
 
             </div>
 
-        </section>
+            <div class="informacoessubtotal">
+                <h2>Subtotal</h2>
+                <div class="dadopedido">
+                    <p>1 Beira-Rio no valor: 85,50</p>
+                    <p><strong>Frete:</strong> 0,00</p>
+                    <p><strong>Subtotal:</strong> 85,50</p>
 
+
+                </div>
+
+            </div>
+
+
+
+            <section id="tempoentrega">
+                <h2>Status do Pedido</h2>
+                <div class="linhadotempo">
+                    <div class="statustrajetoria">
+                        <div class="bolinha preenchida"></div>
+                        <div class="informacaotrajetoria">
+                            <p>14/07/2024</p>
+                            <p>Pedido Recebido</p>
+                        </div>
+                    </div>
+                    <div class="statustrajetoria">
+                        <div class="bolinha preenchida"></div>
+                        <div class="informacaotrajetoria">
+                            <p>15/07/2024</p>
+                            <p>Pedido em Preparo</p>
+                        </div>
+                    </div>
+                    <div class="statustrajetoria">
+                        <div class="bolinha preenchida"></div>
+                        <div class="informacaotrajetoria">
+                            <p>16/07/2024</p>
+                            <p>Pedido Enviado</p>
+                        </div>
+                    </div>
+                    <div class="statustrajetoria">
+                        <div class="bolinha"></div>
+                        <div class="informacaotrajetoria">
+                            <p>15/08/2024</p>
+                            <p>A Caminho</p>
+                        </div>
+                    </div>
+                    <div class="statustrajetoria">
+                        <div class="bolinha"></div>
+                        <div class="informacaotrajetoria">
+                            <p>15/09/2024</p>
+                            <p>Entregue</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="estimativaentrega"><strong>Estimativa de entrega:</strong> 21/09/2024</p>
+            </section>
+
+
+            <div class="botoesdestatu">
+                <div class="btnpedido">
+                    <a href="cancelarpedido.html" id="btncancelar">Cancelar</a>
+                </div>
+                <div class="btnpedido">
+                    <a href="http://wa.me/551499999999?text=Olá, Tudo Bem" id="btnsuporte">Suporte</a>
+                </div>
+            </div>
+
+        </section>
 
 
     </main>
