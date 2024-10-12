@@ -17,49 +17,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="../../css/confg.css">
 </head>
 
 <body id="paginalogin">
     <header id="cabecalho" class="container">
 
         <div class="logo">
-            <img src="./img/logo1.png" alt="logo" height="85">
+            <img src="../../img/logo1.png" alt="logo" height="85">
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="index.html">Paginá inicial</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="ajuda_faq.html">Ajuda</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../../index.html">Paginá inicial</a></li>
+                <li><a href="../../contato.html">Contato</a></li>
+                <li><a href="../../ajuda_faq.html">Ajuda</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
 
             </ul>
         </nav>
 
         <div class="icones">
-            <a href="./usuario/favoritos.html"><i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i></a>
+            <a href="../favoritos.html"><i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i></a>
 
-            <a href="./usuario/carrinho.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
+            <a href="../carrinho.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
 
-            <a href="login.html" id="botaologin"><i class="fa-solid fa-user fa-lg"></i>Login / Cadastrar</a>
+            <a href="../../login.html" id="botaologin"><i class="fa-solid fa-user fa-lg"></i>Login / Cadastrar</a>
         </div>
 
     </header>
 
-    <main>
-        <div class="container" id="titulocadastrar">
-            <h1>Dados Cadastrais</h1>
+    <main class="container">
+        <div id="formpesquisa">
+            <form method="get" action="#">
+                <div class="formicone">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+
+                    <input type="search" name="pesquisa" placeholder="Pesquisar...">
+
+                    <button type="submit">Buscar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="tituloconf">
+            <h1>Editar Perfil</h1>
         </div>
 
         <form method="post" action="" class="container" id="formcadastro">
 
             <div class="adionarfoto">
-                <img src="./img/modelo3.jpg" alt="" id="imagem"
+
+                <img src="../../img/modelo3.jpg" alt="" id="imagem"
                     onclick="document.getElementById('inputImagem').click()">
                 <input type="file" id="inputImagem" accept="image/*" style="display: none;" data-imagemid="imagem">
             </div>
-
-            <P class="msgcampoobrigatorio">Campos com * são obrigatórios</P>
 
             <fieldset class="dadospessoais">
                 <legend>Dados Pessoais</legend>
@@ -152,37 +163,37 @@
                 </div>
 
             </fieldset>
-            <div class="botaoenviar" id="botaocadastro">
-                <button type="submit" name="cadastrousuario">Cadastrar</button>
+            <div class="notificao">
+                <h2>Notificações</h2>
+                
+                <div class="preferencia">
+                    <input type="radio" id="emailnotificacao" name="notificao">
+                    <label for="emailnotificacao"> Receber através do Email</label>
+                </div>
+
+                <div class="preferencia">
+                    <input type="radio" id="whastnotificacao" name="notificao">
+                    <label for="whastnotificacao"> Receber através do WhatsApp</label>
+                </div>
+
+                <div class="preferencia">
+                    <input type="radio" id="semnotificacao" name="notificao">
+                    <label for="semnotificacao">Não desejo receber notificações</label>
+                </div>
+            </div>
+
+            <div id="btnformeditar">
+                <div class="botoesdouser">
+
+                    <a href="perfilusuario.html">Cancelar</a>
+
+                    <button type="submit">Salvar</button>
+                </div>
             </div>
 
         </form>
 
-        <section id="beneficiocadastro">
-            <div class="container" id="listabeneficio">
-                <div>
-                    <div class="vantagens">
-                        <img src="./img/ok.png" height="55">
-                        <p>Cadastrado no site você participa de sorteio. </p>
-                    </div>
-                    <div class="vantagens">
-                        <img src="./img/ok.png" height="55">
-                        <p>Compartilhando sua experiência com nossa loja e sobre produto.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="vantagens">
-                        <img src="./img/ok.png" height="55">
-                        <p>compartilhando você adquiri, pontos, que pode ser convertido para cupom de desconto.</p>
-                    </div>
 
-                    <div class="logotipo">
-                        <img src="./img/logo1.png" alt="logo" height="90">
-                    </div>
-                </div>
-            </div>
-
-        </section>
 
     </main>
     <footer id="rodape">
@@ -224,9 +235,9 @@
                     <a href="https://instagram.com"> <i class="fa-brands fa-instagram fa-xl"></i></a>
                 </div>
                 <div class="link-app">
-                    <img src="./img/google-play.png" alt="App no Google Play">
+                    <img src="../../img/google-play.png" alt="App no Google Play">
 
-                    <img src="./img/app-store.png" alt="Baixe Nosso APP Apple Store">
+                    <img src="../../img/app-store.png" alt="Baixe Nosso APP Apple Store">
                 </div>
 
             </div>
@@ -234,8 +245,11 @@
                 <p>&copy;2023- Todos os direitos são Reservados|Desenvolvido por Tainá Souza</p>
             </div>
         </div>
+
+
+
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>

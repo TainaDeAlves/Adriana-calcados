@@ -37,9 +37,9 @@
         </nav>
 
         <div class="icones">
-            <a href="../../usuario/favoritos.html"><i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i></a>
+            <a href="../favoritos.html"><i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i></a>
 
-            <a href="../../usuario/carrinho.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
+            <a href="../carrinho.html"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i></a>
 
             <a href="../../login.html" id="botaologin"><i class="fa-solid fa-user fa-lg"></i>Login / Cadastrar</a>
         </div>
@@ -90,108 +90,70 @@
 
 
 
-        <section id="rastrear">
+        <section id="cadastrocartao">
             <div class="secaotitulos">
-                <h2>Status do Pedido</h2>
+                <h2> Gerenciamento de cartões</h2>
             </div>
 
-
-
-            <div class="produtopedido">
-                <div class="imgpedido">
-                    <img src="../../img/salto2.png" alt="foto Calçado" height="220">
-                </div>
-                <div class="dadopedido">
-                    <p><strong>Marca:</strong> Beira-Rio</p>
-                    <p><strong>Cor:</strong> Preto</p>
-                    <p><strong>Numeração:</strong> 34</p>
-                    <p><strong>valor:</strong> 85,50</p>
-                    <p class="description"><strong>Descrição:</strong> Vestibulum ante ipsum primis in faucibus orci
-                        luctus et ultrices posuere cubilia curae; Nullam mollis nunc nec nunc faucibus, a sagittis
-                        ligula porta. Ut sed ligula sit amet enim gravida varius. Aliquam erat volutpat.
-
-                    </p>
-
-                </div>
+            <div class="linkformcartao">
+                <a href=""> Cadastrar Cartão</a>
             </div>
 
+            <section id="carcadastrados">
+                <h2> Meus cartões (2)</h2>
 
-            <div class="status">
-                <div class="dadopedido">
-                    <p><strong>Pedido:</strong> 456231</p>
-                    <p><strong>Pedido realizado por:</strong> Tainá Souza</p>
-                    <p><strong>Pedido realizado em:</strong> 14/07/2024 as 20:00</p>
-                    <p><strong>Contato:</strong> taina@gmail.com</p>
+                <form id="formcartao" action="" method="post">
 
-                </div>
+                    <div class="informacoescar">
+                        <div class="selecionar">
+                            <input type="radio" name="cartao" id="car">
 
-            </div>
+                            <label for="car"> Cartão padrão </label>
+                        </div>
 
-            <div class="informacoessubtotal">
-                <h2>Subtotal</h2>
-                <div class="dadopedido">
-                    <p>1 Beira-Rio no valor: 85,50</p>
-                    <p><strong>Frete:</strong> 0,00</p>
-                    <p><strong>Subtotal:</strong> 85,50</p>
-
-
-                </div>
-
-            </div>
-
-
-
-            <section id="tempoentrega">
-                <h2>Status do Pedido</h2>
-                <div class="linhadotempo">
-                    <div class="statustrajetoria">
-                        <div class="bolinha preenchida"></div>
-                        <div class="informacaotrajetoria">
-                            <p>14/07/2024</p>
-                            <p>Pedido Recebido</p>
+                        <div class="cartao">
+                            <div class="dadoscartao">
+                                <i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i>
+                                <div class="titular">
+                                    <p>Master Card</p>
+                                    <p>Tainá Souza</p>
+                                    <p><strong>**** **** **** 1524</strong> </p>
+                                </div>
+                            </div>
+                            <div class="lixeira">
+                                <i class="fa-regular fa-trash-can fa-2xl" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="statustrajetoria">
-                        <div class="bolinha preenchida"></div>
-                        <div class="informacaotrajetoria">
-                            <p>15/07/2024</p>
-                            <p>Pedido em Preparo</p>
+
+                    <div class="informacoescar">
+                        
+                        <div class="selecionar">
+                            <input type="radio" name="cartao" id="card">
+                            <label for="card"> Definir como padrão </label>
+                        </div>
+
+                        <div class="cartao">
+                            <div class="dadoscartao">
+                                <i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #000000;"></i>
+                                <div class="titular">
+                                    <p>Master Card</p>
+                                    <p>Tainá Souza</p>
+                                    <p><strong>**** **** **** 1524</strong> </p>
+                                </div>
+                            </div>
+
+                            <div class="lixeira">
+                                <i class="fa-regular fa-trash-can fa-2xl" style="color: #000000;"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="statustrajetoria">
-                        <div class="bolinha preenchida"></div>
-                        <div class="informacaotrajetoria">
-                            <p>16/07/2024</p>
-                            <p>Pedido Enviado</p>
-                        </div>
-                    </div>
-                    <div class="statustrajetoria">
-                        <div class="bolinha"></div>
-                        <div class="informacaotrajetoria">
-                            <p>15/08/2024</p>
-                            <p>A Caminho</p>
-                        </div>
-                    </div>
-                    <div class="statustrajetoria">
-                        <div class="bolinha"></div>
-                        <div class="informacaotrajetoria">
-                            <p>15/09/2024</p>
-                            <p>Entregue</p>
-                        </div>
-                    </div>
-                </div>
-                <p class="estimativaentrega"><strong>Estimativa de entrega:</strong> 21/09/2024</p>
+
+                </form>
+
             </section>
 
 
-            <div class="botoesdeconf">
-                <div class="btnpedido">
-                    <a href="cancelarpedido.html" id="btncancelar">Cancelar</a>
-                </div>
-                <div class="btnpedido">
-                    <a href="http://wa.me/551499999999?text=Olá, Tudo Bem" id="btnsuporte">Suporte</a>
-                </div>
-            </div>
 
         </section>
 

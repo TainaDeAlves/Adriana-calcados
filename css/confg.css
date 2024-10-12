@@ -1,5 +1,7 @@
 @import url("../css/main.css");
 @import url("../css/admin.css");
+@import url("../css/cadastro.css");
+@import url("../css/blog.css");
 
 .tituloconf h1 {
     font-family: var(--texttitulo);
@@ -64,16 +66,43 @@
     font-size: clamp(16px, 1.2vw, 20px);
 }
 
-#notificacoes {
+.notificacoes {
     margin: 35px 25px;
 }
 
-#notificacoes h2 {
+.notificacoes h2 {
     margin: 15px 0px;
 }
 
-#notificacoes p {
+.notificacoes p {
     margin: 10px 0px;
+    font-size: clamp(16px, 1.2vw, 20px)
+}
+
+.botoesdouser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin: 65px 25px;
+}
+
+.botoesdouser a {
+    width: 25%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: clamp(16px, 1.2vw, 20px)
+}
+
+.botoesdouser button {
+    width: 25%;
+    padding: 6px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
     font-size: clamp(16px, 1.2vw, 20px)
 }
 
@@ -168,10 +197,11 @@
     font-size: clamp(16px, 1.2vw, 25px);
 }
 
-.botoesdestatu {
+.botoesdeconf {
     display: flex;
     justify-content: right;
     align-items: center;
+
 }
 
 .btnpedido a {
@@ -180,6 +210,7 @@
     background-color: #3333332a;
     border-radius: 35px;
     padding: 5px 35px;
+    border: solid 1px #333;
 }
 
 #btncancelar {
@@ -189,6 +220,13 @@
 /*tremino da pagina pedidocompra */
 
 /* começo da pagina historico de pedidos */
+#tabelahispedidos {
+    margin: 70px 0px;
+}
+
+#tabelahispedidos h2 {
+    margin-top: 30px;
+}
 
 #tabelapedido h3 {
     background-color: #33333314;
@@ -197,8 +235,6 @@
     font-size: clamp(16px, 2vw, 35px);
     padding-left: 10px;
     font-weight: 500;
-
-
 }
 
 .produto {
@@ -206,36 +242,229 @@
     text-align: justify;
     width: 70%;
 }
+
 #tabelapedido {
-    border-spacing: 10px; /* Espaçamento entre células */
-    border-collapse: separate; /* Garante que border-spacing funcione */
+    border-spacing: 10px;
+    /* Espaçamento entre células */
+    border-collapse: separate;
+    /* Garante que border-spacing funcione */
     width: 100%;
 }
 
 /* Define o padding interno das células */
-#tabelapedido td, #tabelapedido th {
-    padding: 10px; /* Ajuste o valor conforme necessário */
+#tabelapedido td,
+#tabelapedido th {
+    padding: 10px;
+    /* Ajuste o valor conforme necessário */
     font-size: clamp(16px, 1vw, 18px);
 }
 
-#tabelapedido td p{
-   
+#tabelapedido td p {
     font-size: clamp(16px, 1.5vw, 35px);
 }
-
 
 /* Estilo para a descrição */
 .description {
     line-height: 1.5;
 }
-.destinatariopagamento{
-   border-bottom:solid 5px#3333338e;
-   width: 100%;
-  
-}
-.backgroundcolor{
-   border-bottom: #3333332d solid 15px;
 
+.destinatariopagamento {
+    border-bottom: solid 5px#3333338e;
+    width: 100%;
 }
 
+.backgroundcolor {
+    border-bottom: #3333332d solid 15px;
+}
 
+.alertrd p {
+    font-size: clamp(16px, 1.2vw, 20px);
+    margin: 15px 30px;
+}
+
+.alertrd span {
+    color: #c50f0f;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* começo da pagina historico de pedidos */
+
+
+/* começo da pagina cartão*/
+.linkformcartao {
+    display: flex;
+    justify-content: right;
+}
+
+.linkformcartao a {
+    border: #333 solid 1px;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: clamp(16px, 1.2vw, 22px);
+    margin: 25px 0px;
+}
+
+#carcadastrados h2 {
+    font-size: clamp(16px, 2vw, 45px);
+    font-weight: 500;
+}
+
+.informacoescar {
+    border: #6a6a6a55 solid 1px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 2px #c5c1c1d0;
+    margin: 35px 0px;
+    padding: 5px;
+    width: 80%;
+}
+
+.informacoescar input {
+    margin-right: 25px;
+}
+
+.informacoescar input[type='radio'] {
+    width: 25px;
+    height: 25px;
+}
+
+.informacoescar label {
+    font-size: clamp(16px, 1.5vw, 22px);
+}
+
+.selecionar {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.cartao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    margin: 10px;
+}
+
+.dadoscartao {
+    display: flex;
+    align-items: center;
+    font-size: clamp(14px, 1.3vw, 35px);
+}
+
+.dadoscartao i {
+    font-size: 55px;
+    margin-right: 35px;
+}
+
+.titular p {
+    padding: 5px 0px;
+}
+
+.lixeira {
+    font-size: 25px;
+}
+
+/* final da pagina cartão*/
+
+
+/* COMEÇO CSS DOS FORMULARIOS */
+
+/* começo  form editar perfil */
+.dado input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 25px;
+    border: solid 1px black;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.dado input::placeholder {
+    font-weight: 600;
+    color: #000000;
+}
+
+.preferencia {
+    margin: 25px;
+    font-size: clamp(14px, 1.5vw, 35px);
+    display: flex;
+    align-items: center;
+}
+
+.preferencia input[type='radio'] {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+/* final form editar perfil */
+
+
+
+/* FINAL CSS DOS FORMULARIOS */
+
+
+
+.btninicinoconf {
+    display: flex;
+    justify-content: right;
+}
+
+.btninicinoconf a {
+    font-size: clamp(14px, 1.3vw, 20px);
+    text-align: center;
+    padding: 8px 15px;
+    border: solid 1px var(--secundaria);
+    border-radius: 35px;
+    width: 15%;
+}
+
+.btninicinoconf i {
+    margin-right: 20px;
+}
+
+#lidaconf li a {
+    font-family: var(--texttitulo);
+    font-size: clamp(14px, 1.6vw, 30px);
+}
+
+.sei {
+    margin-left: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.confuser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.kkkk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.datahr {
+    margin: 15px 0px;
+}
+
+#comentariouserconf {
+    margin-top: 15px;
+    width: 80%;
+}
+
+
+.bordaconf {
+    border: solid 4px #d7ac8f8f;
+    width: 100%;
+    padding: 15px 25px;
+    margin-right: 35px;
+}

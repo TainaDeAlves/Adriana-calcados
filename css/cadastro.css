@@ -1,46 +1,58 @@
 @import url(main.css);
 @import url(ajuda_faq.css);
 
-#titulocadastrar h1{
-text-align: center;
-font-family: var(--texttitulo);
-font-size: clamp(0.65vw,55px,3vw);
-font-weight: 400;
+#titulocadastrar h1 {
+    text-align: center;
+    font-family: var(--texttitulo);
+    font-size: clamp(0.65vw, 55px, 3vw);
+    font-weight: 400;
 }
 
-#formcadastro{
+#formcadastro {
     border-radius: 45px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 45px;
     width: 85%;
-    background-color:transparent;
-    
-}
-.clipdepapel{
-   display: flex; 
-   justify-content: right;
+    background-color: transparent;
+
 }
 
-#adionarfoto{
+.clipdepapel {
+    display: flex;
+    justify-content: right;
+}
+
+.adionarfoto {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.msgcampoobrigatorio{
+
+.adionarfoto img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.msgcampoobrigatorio {
     color: rgb(255, 10, 10);
     font-size: clamp(16px, 1.2vw, 20px);
     margin-left: 35px;
 }
-.dadospessoais{
+
+.dadospessoais {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border: none;
     margin: 85px 0px;
-   
+
 }
-.dadospessoais legend{
+
+.dadospessoais legend {
     border-bottom: solid var(--primaria) 3px;
     width: 100%;
     margin-bottom: 35px;
@@ -48,55 +60,64 @@ font-weight: 400;
     font-size: clamp(20px, 2vw, 30px);
     font-family: var(--texttitulo);
 }
-.informacao input{
-   background-color: transparent;
-   border: none;
-   outline: none;
-   border-bottom: solid black 3px;
-  
-   width: 350px;
-   height: 27px;
-   margin:20px 0px ;
+
+.informacao input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: solid black 3px;
+
+    width: 350px;
+    height: 27px;
+    margin: 20px 0px;
 }
-.informacao ::placeholder{
+
+.informacao ::placeholder {
     font-size: clamp(20px, 1vw, 25px);
     color: #000;
 }
-#botaocadastro{
+
+#botaocadastro {
     display: flex;
     justify-content: right;
     align-items: center;
     width: 100%;
 }
-#botaocadastro button{
+
+#botaocadastro button {
     font-size: clamp(25px, 1.5vw, 30px);
     border-radius: 30px;
 }
-#beneficiocadastro{
+
+#beneficiocadastro {
     background-color: #aeaeae29;
     padding: 20px;
     margin: 55px 0px;
 }
-#listabeneficio{
+
+#listabeneficio {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.vantagens{
+
+.vantagens {
     margin: 30px 0px;
     display: flex;
     align-items: center;
 }
-.vantagens p{
-   text-align: center;
-   width: 66%; 
-   font-size: clamp(20px, 1vw, 25px);
-   font-family: var(--texttitulo);
-   margin-left: 25px;
+
+.vantagens p {
+    text-align: center;
+    width: 66%;
+    font-size: clamp(20px, 1vw, 25px);
+    font-family: var(--texttitulo);
+    margin-left: 25px;
 }
-.logotipo{
+
+.logotipo {
     display: flex;
     justify-content: right;
     margin-right: 50px;
-    
+
 }

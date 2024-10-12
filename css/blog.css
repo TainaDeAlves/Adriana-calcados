@@ -12,7 +12,7 @@
     display: flex;
     width: 80%;
     height: 100%;
-    
+
 }
 
 .legenda {
@@ -39,7 +39,7 @@
     height: 655px;
     background-color: #e5e2e2;
 
-    
+
 }
 
 .swiper-slide img {
@@ -52,10 +52,11 @@
 
 .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
- }
- .swiper-3d .swiper-slide-shadow-left{
-     background-image: none;
- }
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+    background-image: none;
+}
 
 .mesagemblog {
     margin-top: 10px;
@@ -70,8 +71,9 @@
     object-fit: cover;
     border-radius: 35px;
     margin-top: -50px;
-    
+
 }
+
 /* ----------------------------- */
 
 .ss {
@@ -82,7 +84,7 @@
 .backgrondprevia {
     padding: 35px;
     background-color: #7c7f7f22;
-    margin:65px 0px;
+    margin: 65px 0px;
 
 }
 
@@ -178,7 +180,7 @@
     padding: 5px 30px;
     text-align: center;
     color: #ffffff;
-  
+
 
 }
 
@@ -245,14 +247,14 @@
 }
 
 .tituloartigo {
-display: flex;
-justify-content: center;
-   
+    display: flex;
+    justify-content: center;
+
     width: 310px;
 }
 
 .tituloartigo p {
- text-align: center;
+    text-align: center;
     font-family: var(--texttitulo);
     font-size: 25px;
     font-weight: 600;

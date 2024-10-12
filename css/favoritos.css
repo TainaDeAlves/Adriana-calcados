@@ -103,7 +103,8 @@
 
 .precos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px 0px;
     margin-bottom: 25px;
 }
@@ -120,7 +121,7 @@
 
 .adicionar_remover {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -150,8 +151,8 @@
 }
 
 .lixeiraesgotadp {
-    text-align: right;
-    margin-right: 65px;
+    display: flex;
+    justify-content: right;
     font-size: 25px;
 }
 
@@ -172,7 +173,7 @@
 .precosemdesconto p {
     font-size: Clamp(20px, 3vw, 40px);
     font-weight: 300;
-    margin: 30px;
+    margin: 30px 5px;
 }
 
 #navdoflitro {
