@@ -59,124 +59,42 @@
             </form>
         </div>
 
-        <div class="tituloconf">
-            <h1>Editar Perfil</h1>
+        <div class="">
+            <h1>Alterar senha</h1>
         </div>
-
+ 
         <form method="post" action="" class="container" id="formcadastro">
 
-            <div class="adionarfoto">
+         
+            <fieldset class="dadospessoais" id="formsenha">
 
-                <img src="../../img/modelo3.jpg" alt="" id="imagem"
-                    onclick="document.getElementById('inputImagem').click()">
-                <input type="file" id="inputImagem" accept="image/*" style="display: none;" data-imagemid="imagem">
-            </div>
+                <legend>Senha</legend>
 
-            <fieldset class="dadospessoais">
-                <legend>Dados Pessoais</legend>
+                <div class="informacao">
 
-                <div class="dados">
-                    <div class="informacao">
-
-                        <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="* Nome:">
-                    </div>
-
-                    <div class="informacao">
-                        <label for="cpf"></label>
-                        <input type="text" name="cpf" id="cpf" placeholder="* CPF:">
-                    </div>
-
-                    <div class="informacao">
-
-                        <input type="tel" name="celular" id="celular" placeholder="* Celular:">
-                    </div>
+                    <input type="password" name="senha" id="senha" placeholder="* Senha Atual:">
                 </div>
 
-                <div class="dados">
-                    <div class="informacao">
+                <div class="informacao">
 
-                        <input type="text" name="sobrenome" id="sobrenome" placeholder="* Sobrenome:">
-                    </div>
+                    <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="* Nova senha:">
+                </div>
 
-                    <div class="informacao">
 
-                        <input type="text" name="data_nasc" id="data_nasc" placeholder="* Data de Nascimeto:">
-                    </div>
+                <div class="informacao">
 
-                    <div class="informacao">
-
-                        <input type="email" name="email" id="email" placeholder="* Email:">
-                    </div>
+                    <input type="password" name="confirmarsenha" id="confirmarsenha" placeholder="* Confirme a senha:">
                 </div>
 
             </fieldset>
+            <div >
+                <button type="submit" name="cadastrousuario">Cancelar</button>
 
-            <fieldset class="dadospessoais">
-                <legend>Endereço</legend>
-                <div class="dados">
-                    <div class="informacao">
-
-                        <input type="text" name="rua" id="rua" placeholder="* Rua:">
-                    </div>
-
-                    <div class="informacao">
-
-                        <input type="text" name="cidade" id="cidade" placeholder="* Cidade:">
-                    </div>
-
-                    <div class="informacao">
-
-                        <input type="text" name="complemento" id="complemento" placeholder="* Complemento:">
-                    </div>
-                </div>
-
-                <div class="dados">
-                    <div class="informacao">
-
-                        <input type="text" name="numero" id="numero" placeholder="* Numero:">
-                    </div>
-
-                    <div class="informacao">
-
-                        <input type="text" name="estado" id="estado" placeholder="* Estado:">
-                    </div>
-
-                    <div class="informacao">
-
-                        <input type="text" name="cep" id="cep" placeholder="* CEP:">
-                    </div>
-                </div>
-
-            </fieldset>
-            <div class="notificao">
-                <h2>Notificações</h2>
-                
-                <div class="preferencia">
-                    <input type="radio" id="emailnotificacao" name="notificao">
-                    <label for="emailnotificacao"> Receber através do Email</label>
-                </div>
-
-                <div class="preferencia">
-                    <input type="radio" id="whastnotificacao" name="notificao">
-                    <label for="whastnotificacao"> Receber através do WhatsApp</label>
-                </div>
-
-                <div class="preferencia">
-                    <input type="radio" id="semnotificacao" name="notificao">
-                    <label for="semnotificacao">Não desejo receber notificações</label>
-                </div>
-            </div>
-
-            <div id="btnformeditar">
-                <div class="botoesdouser">
-
-                    <a href="perfilusuario.html">Cancelar</a>
-
-                    <button type="submit">Salvar</button>
-                </div>
+                <button type="submit" name="cadastrousuario">Alterar</button>
             </div>
 
         </form>
+
 
 
 
