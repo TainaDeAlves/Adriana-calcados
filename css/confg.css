@@ -407,6 +407,12 @@
     display: block;
 }
 
+.titlesenha h1{
+    font-size: clamp(14px, 3vw, 35px);
+    font-weight: 450;
+    color: var(text);
+}
+
 
 /* final do form de editar senha */
 
