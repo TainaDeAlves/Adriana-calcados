@@ -60,19 +60,25 @@
 
 
     <div id="carrocel">
-      <div class="">
-        <img src="./img/banner.png" alt="propaganda">
-        
+      <!-- Carrossel de Imagens -->
+      <div class="carousel-images">
+        <div class="carousel-item active">
+          <img src="./img/banner.png" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/feminino.jpg" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/saltopublicar.jpg" alt="Imagem 3">
+        </div>
       </div>
-      <div class="diferencial">
-        <ul>
-          <li>Descontos</li>
-          <li>Qualidade</li>
-          <li>Praticidade</li>
-          <li>Preço baixo</li>
-        </ul>
-      </div>
+
+      <!-- Botões de navegação -->
+      <button class="carousel-button prev" id="prevBtn">&#10094;</button>
+      <button class="carousel-button next" id="nextBtn">&#10095;</button>
+
     </div>
+
 
     <section id="secaopromocoes" class="container">
       <div class="produtos">
@@ -245,8 +251,13 @@
             </div>
           </a>
           <!-- final card promoção -->
+
+
+          
         </div>
       </div>
+    
+
     </section>
 
     <section id="secaocategorias">
