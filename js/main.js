@@ -66,8 +66,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+// function limitarPalavras() {
+//   var descricao = document.getElementById('descricao-produto');
+//   var texto = descricao.textContent || descricao.innerText;
+//   var palavras = texto.split(/\s+/); // Divide o texto em palavras
   
+//   // Defina o limite de palavras
+//   var limite = 6.5; // por exemplo, limite de 20 palavras
+
+//   if (palavras.length > limite) {
+//       palavras = palavras.slice(0, limite); // Pega apenas as primeiras 20 palavras
+//       descricao.textContent = palavras.join(' ') + ''; // Junta as palavras e adiciona '...'
+//       descricao.classList.add('descricao-limitada'); // Adiciona uma classe para estilizar, se desejar
+//   }
+// }
+
+// // Chama a função quando a página for carregada
+// window.onload = limitarPalavras;
+  
+
+
+
 
 
 
