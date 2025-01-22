@@ -19,7 +19,10 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
   <link rel="stylesheet" href="./css/blog.css">
 
@@ -38,7 +41,7 @@
         <li><a href="contato.html">Contato</a></li>
         <li><a href="ajuda_faq.html">Ajuda</a></li>
         <li><a href="blog.html">Blog</a></li>
-        
+
       </ul>
     </nav>
     <div class="icones">
@@ -54,14 +57,14 @@
     <div id="formpesquisa" class="container">
       <form method="get" action="#">
         <div class="formicone">
-          
+
           <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 
           <input type="search" name="pesquisa" placeholder="Pesquisar...">
 
           <button type="submit">Buscar</button>
 
-         
+
         </div>
       </form>
     </div>
@@ -75,7 +78,7 @@
 
 
       <div class="swiper mySwiper">
-        <div class="swiper-wrapper" >
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
 
             <div class="legenda">
@@ -192,79 +195,171 @@
 
     <section id="previas" class="backgrondprevia">
       <div class="container">
-
         <div class="secaotitulos">
           <h2>Prévias</h2>
         </div>
-        <div class="ss">
-          <article id="comentaridousuario" class="bordaprevia">
-
-            <div class="usuarioduvida">
-              <div class="dadosusuario">
-                <div class="fotousuario">
-                  <img src="./img/modelo3.jpg">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
                 </div>
-                <div class="nomeusuario">
-                  <p>Tainá</p>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
                 </div>
-              </div>
-              <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
-            </div>
-
-            <div class="pergunta">
-              <div class="perguntausuario">
-                <p>Mensagem:</p>
-                <p class="mesagemusuario">
-                  Perfeito 
-                </p>
-              </div>
-            </div>
-
-            <div class="resposta">
-
-              <p class="respostaadriana">
-                Resposta: Olá Tainá, obrigado por comprar na nossa loja.
-            </div>
-          </article>
-
-
-
-          <article id="comentaridousuario" class="bordaprevia">
-
-            <div class="usuarioduvida">
-              <div class="dadosusuario">
-                <div class="fotousuario">
-                  <img src="./img/modelo3.jpg">
-                </div>
-                <div class="nomeusuario">
-                  <p>Tainá</p>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
                 </div>
               </div>
-              <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
             </div>
 
-            <div class="pergunta">
-              <div class="perguntausuario">
-                <p>Mensagem:</p>
-                <p class="mesagemusuario">
-                  Amei a loja muitas novidades.
-                </p>
+            <div class="carousel-item ">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                </div>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
+                </div>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
+                </div>
               </div>
             </div>
 
-            <div class="resposta">
-
-              <p class="respostaadriana">
-                Resposta: Olá Tainá, obrigado por comprar na nossa loja.
+            <div class="carousel-item ">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                </div>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
+                </div>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
+                </div>
+              </div>
             </div>
-          </article>
 
+            <div class="carousel-item ">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                </div>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
+                </div>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                </div>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
+                </div>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item ">
+              <div class="bordaprevia">
+                <div class="usuarioduvida">
+                  <div class="dadosusuario">
+                    <div class="fotousuario">
+                      <img src="./img/modelo3.jpg" alt="Foto do Usuário">
+                    </div>
+                    <div class="nomeusuario">
+                      <p>Tainá</p>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
+                </div>
+                <div class="pergunta">
+                  <div class="perguntausuario">
+                    <p>Mensagem:</p>
+                    <p class="mesagemusuario">Perfeito</p>
+                  </div>
+                </div>
+                <div class="resposta">
+                  <p class="respostaadriana">Resposta: Olá Tainá, obrigado por comprar na nossa loja.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Adicione os outros itens do carrossel aqui -->
+          </div>
+          <!-- Botões de navegação -->
 
         </div>
 
       </div>
 
     </section>
+
+
 
     <section id="postagemartigos" class="container">
 
@@ -394,82 +489,82 @@
     </section>
   </main>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 15,
-      stretch: 0,
-      depth: 300,
-      modifier: 1,
-      slideShadows: true,
-    },
-    loop: true,
-  });
-</script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 15,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+  </script>
 
 
 
 
   <footer id="rodape">
 
-  <div id="listarodape" class="container">
+    <div id="listarodape" class="container">
 
-    <div class="colunarodape">
-      <h2>Nossa loja</h2>
-      <ul>
-        <li><a href="sobrenos.html">Sobre Nós</a></li>
-        <li><a href="horario.html">Horarío</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        
-      </ul>
-    </div>
+      <div class="colunarodape">
+        <h2>Nossa loja</h2>
+        <ul>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+          <li><a href="horario.html">Horarío</a></li>
+          <li><a href="blog.html">Blog</a></li>
 
-    <div class="colunarodape">
-      <h2>Endereço</h2>
-      <p><i class="fa-solid fa-hotel fa-xl"></i> Av: João Martins Coelho; N°1736 </p>
-    </div>
-
-    <div class="colunarodape">
-      <h2>Contato</h2>
-      <ul>
-        <li><a href="http://wa.me/551499999999?text=Olá, Tudo Bem"><i class="fa-brands fa-whatsapp fa-xl"></i>
-            (14) 9999-9999</a></li>
-        <li><a href="tel:1434333333"><i class="fa-solid fa-phone fa-xl"></i> (14) 34333333 </a></li>
-        <li><a href="mailto:contato@boockmenow.com.br"><i class="fa-regular fa-envelope fa-xl"></i>
-            Adrianacalcados@gmail.com</a></li>
-      </ul>
-    </div>
-
-    <div class="colunarodape">
-      <h2>Redes Sociais</h2>
-      <div class="rede-sociais">
-        <a href="https://facebook.com"> <i class="fa-brands fa-facebook fa-xl"></i></a>
-
-        <a href="https://instagram.com"> <i class="fa-brands fa-instagram fa-xl"></i></a>
-      </div>
-      <div class="link-app">
-        <img src="./img/google-play.png" alt="App no Google Play">
-
-        <img src="./img/app-store.png" alt="Baixe Nosso APP Apple Store">
+        </ul>
       </div>
 
+      <div class="colunarodape">
+        <h2>Endereço</h2>
+        <p><i class="fa-solid fa-hotel fa-xl"></i> Av: João Martins Coelho; N°1736 </p>
+      </div>
+
+      <div class="colunarodape">
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="http://wa.me/551499999999?text=Olá, Tudo Bem"><i class="fa-brands fa-whatsapp fa-xl"></i>
+              (14) 9999-9999</a></li>
+          <li><a href="tel:1434333333"><i class="fa-solid fa-phone fa-xl"></i> (14) 34333333 </a></li>
+          <li><a href="mailto:contato@boockmenow.com.br"><i class="fa-regular fa-envelope fa-xl"></i>
+              Adrianacalcados@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="colunarodape">
+        <h2>Redes Sociais</h2>
+        <div class="rede-sociais">
+          <a href="https://facebook.com"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+
+          <a href="https://instagram.com"> <i class="fa-brands fa-instagram fa-xl"></i></a>
+        </div>
+        <div class="link-app">
+          <img src="./img/google-play.png" alt="App no Google Play">
+
+          <img src="./img/app-store.png" alt="Baixe Nosso APP Apple Store">
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>&copy;2023- Todos os direitos são Reservados|Desenvolvido por Tainá Souza</p>
+      </div>
     </div>
-    <div class="copyright">
-      <p>&copy;2023- Todos os direitos são Reservados|Desenvolvido por Tainá Souza</p>
-    </div>
-  </div>
+  </footer>
 
-
-
-</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
 </body>
 

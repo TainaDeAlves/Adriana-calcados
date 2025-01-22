@@ -1,6 +1,4 @@
-@import url("main.css");
-
-
+@import url('main.css');
 
 #tituloblog {
     margin-top: 55px;
@@ -76,24 +74,38 @@
 
 /* ----------------------------- */
 
-.ss {
-    display: flex;
-    gap: 20px;
+.backgrondprevia {
+    background-color: #e5e2e2;
+    height: 550px;
+    padding: 35px;
+    margin: 65px 0px;
 }
 
-.backgrondprevia {
-    padding: 35px;
-    background-color: #7c7f7f22;
-    margin: 65px 0px;
 
+
+.carousel-item {
+    overflow: hidden;
+    width: 100%;
+    transition: transform .8s ease-in-out;
+
+}
+
+.carousel-inner {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 400px;
 }
 
 .bordaprevia {
+    margin: 0px 65px;
     border: solid 5px #d7ac8f8f;
     padding: 25px;
-    width: 750px;
-    height: 30%;
+    width: 550px;
+    height: 280px;
+
 }
+
 
 .usuarioduvida {
     display: flex;
@@ -130,7 +142,7 @@
     margin: 10px 0px;
     max-width: 450px;
     width: 450px;
-    height: 30%;
+    height: auto;
 }
 
 .mesagemusuario {
@@ -141,8 +153,9 @@
 .resposta {
     max-width: 345px;
     margin-top: 15px;
-
 }
+
+
 
 .backgrondnavegacao {
     height: 12px;
@@ -180,8 +193,6 @@
     padding: 5px 30px;
     text-align: center;
     color: #ffffff;
-
-
 }
 
 #secaoartigos {
