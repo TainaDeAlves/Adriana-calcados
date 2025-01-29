@@ -20,6 +20,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/favoritos.css">
 
@@ -61,12 +62,20 @@
       <p>Itens 2</p>
     </div>
 
-    <div class="listaflitro">
+    <div id="listaflitro">
       <ul>
-        <li><a href="">Desconto</a></li>
-        <li><a href="">Modelo</a> </li>
-        <li><a href="">Tipo</a></li>
-        <li><a href="">Categoria</a></li>
+        <li><button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">backdrop</button>
+        </li>
+        <li><button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> backdrop</button>
+        </li>
+        <li><button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> backdrop</button>
+        </li>
+        <li><button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"> backdrop</button>
+        </li>
       </ul>
     </div>
 
@@ -170,16 +179,23 @@
             </div>
           </div>
         </div>
-        <section id="navdoflitro">
 
-          <ul class="tiposdefavoritos">
+
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+
+          <div class="offcanvas-header">
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <ul id="tiposdefavoritos">
             <li><a href="">Salto Alto</a></li>
             <li><a href="">Sapatilha</a></li>
             <li><a href="">Sapato</a></li>
             <li><a href="">Tenis</a></li>
           </ul>
+        </div>
 
-        </section>
       </div>
 
 
@@ -191,15 +207,6 @@
         <h2>você pode gostar </h2>
         <i class="fa-solid fa-heart fa-2xl" style="color: #800a0a;"></i>
       </div>
-
-        
-
-        
-
-
-
-        
-
 
       <div class="carditem">
 
@@ -396,6 +403,8 @@
 
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

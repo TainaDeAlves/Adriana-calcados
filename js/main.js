@@ -23,7 +23,21 @@ function selecionarImagem(input, imagem) {
 }
 
 
+function faq() {
+  var texto = document.getElementById('textchamado');  // Obtém o parágrafo com o id 'textchamado'
+  var icone = document.getElementById('icone');        // Obtém o ícone da seta
 
+  // Verifica se o texto está visível
+  if (texto.style.display === "block") {
+    texto.style.display = "none";  // Recolhe o texto
+    icone.classList.remove('fa-chevron-down');  // Remove a seta para baixo
+    icone.classList.add('fa-chevron-right');    // Adiciona a seta para a direita
+  } else {
+    texto.style.display = "block";  // Exibe o texto
+    icone.classList.remove('fa-chevron-right'); // Remove a seta para a direita
+    icone.classList.add('fa-chevron-down');     // Adiciona a seta para baixo
+  }
+}
 
 
 

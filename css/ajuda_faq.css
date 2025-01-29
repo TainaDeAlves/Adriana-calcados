@@ -77,6 +77,9 @@
 .perguntafaq {
     font-size: clamp(0.35vw, 18px, 3vw);
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .respostafaq {
@@ -84,20 +87,17 @@
     margin-left: 55px;
 }
 
-.respostafaq details {
+.respostafaq {
     margin-bottom: 65px;
 }
 
-.respostafaq details summary {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
+.respostafaq details summary {}
 
-.textchamado {
+#textchamado {
     max-width: 695px;
     padding: 10px;
-    
+    display: none;
+
 }
 
 .dadosdoenvio {
@@ -110,10 +110,10 @@
 
 
 
-.titulo h2{
+.titulo h2 {
     font-family: var(--texttitulo);
     font-weight: 400;
-    font-size: clamp(1vw,45px, 3vw);
+    font-size: clamp(1vw, 45px, 3vw);
     margin: 35px 0px;
 }
 
@@ -158,4 +158,3 @@
     color: var(--primaria);
     margin-bottom: 50px;
 }
-

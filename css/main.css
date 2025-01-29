@@ -221,6 +221,8 @@ body {
     width: 90%;
     overflow: hidden;
     padding: 10px;
+    
+ 
 }
 
 .descricao p {
@@ -228,7 +230,7 @@ body {
 }
 
 .descricaoproduto {
-    font-size: Clamp(21px, 1.4vw, 30px);
+    font-size: Clamp(21px, 1.4vw, 22px);
     font-family: var(--textcorpo);
     font-weight: 400;
 }
@@ -238,33 +240,33 @@ body {
 }
 
 .precodesconto {
-    font-size: Clamp(25px, 1.6vw, 30px);
+    font-size: Clamp(25px, 1.6vw, 22px);
 }
 
 .precoatual p {
     color: #ff1212;
-    font-size: Clamp(20px, 1.2vw, 30px);
+    font-size: Clamp(20px, 1.2vw, 25px);
     text-decoration: line-through;
     text-align: right;
 }
 
 .formapagamento {
-    font-size: Clamp(18px, 1.2vw, 30px);
+    font-size: Clamp(18px, 1.2vw, 20px);
     margin: 10px 0px;
 
 }
 
 .estrela {
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     left: 50%;
-    transform: translateX(-95%);
+    transform: translateX(-90%);
     display: flex;
     justify-content: left;
 }
 
 .estrela i {
-    margin: 0 2px;
+    margin: 2px 2px;
 }
 
 .cores {

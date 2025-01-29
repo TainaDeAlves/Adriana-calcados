@@ -31,7 +31,7 @@
     font-family: var(--texttitulo);
 }
 
-.listaflitro ul {
+#listaflitro ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,22 +41,24 @@
     padding: 0px 20px;
 }
 
-.listaflitro ul li {
+#listaflitro ul li {
     display: flex;
     align-items: center;
-    font-family: var(--texttitulo);
-    font-size: Clamp(20px, 2.1vw, 35px);
     text-align: center;
     width: 25%;
     height: 100%;
     margin: 0px -20px;
 }
 
-.listaflitro ul li a {
+#listaflitro ul li button {
     width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: Clamp(20px, 2vw, 35px);
+    font-family: var(--texttitulo);
 }
 
-.listaflitro ul li:hover {
+#listaflitro ul li:hover {
     background-color: #d7ac8f55;
 }
 
@@ -176,28 +178,40 @@
     margin: 30px 5px;
 }
 
-#navdoflitro {
-    width: 25%;
-    display: flex;
-    justify-content: right;
-}
 
-.tiposdefavoritos {
+#tiposdefavoritos {
     list-style: none;
-    text-align: center;
-    border-right: 8px #d7ac8f63 solid;
+    text-align: left;
+    
 }
 
-.tiposdefavoritos li {
+#tiposdefavoritos li a{
     font-family: var(--texttitulo);
     font-size: Clamp(20px, 1.8vw, 30px);
-    margin-bottom: 35px;
+  
     padding-right: 10px;
+  
+}
+#tiposdefavoritos li{
+ margin-bottom: 30px;
+}
+#tiposdefavoritos li:hover {
+    border-bottom: solid 2px #7C7F7F;
+     width: 100%;
+    
+    
+}   
+
+.offcanvas-backdrop {
+    background-color: transparent;
 }
 
-.tiposdefavoritos li a:hover {
-    border-bottom: solid 4px #7C7F7F;
-    padding-top: 25px;
+.offcanvas {
+    border:none ;
+    background-color: transparent;
+   border-right: 10px solid #d7ac8f;
+    position: relative;
 }
-
-
+.offcanvas.offcanvas-end{
+    border-left: none;
+}

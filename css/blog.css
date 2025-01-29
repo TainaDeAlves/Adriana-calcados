@@ -74,85 +74,63 @@
 
 /* ----------------------------- */
 
-.backgrondprevia {
-    background-color: #e5e2e2;
+.backgronddepoimento {
+    background-color: #e5e2e27e;
     height: 550px;
     padding: 35px;
     margin: 65px 0px;
 }
 
-
-
 .carousel-item {
     overflow: hidden;
     width: 100%;
-    transition: transform .8s ease-in-out;
-
+    transition: transform .60s ease-in-out;
 }
 
 .carousel-inner {
     display: flex;
     gap: 20px;
     width: 100%;
-    height: 400px;
+    height: 460px;
 }
 
-.bordaprevia {
-    margin: 0px 65px;
-    border: solid 5px #d7ac8f8f;
-    padding: 25px;
-    width: 550px;
-    height: 280px;
-
-}
-
-
-.usuarioduvida {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.dadosusuario {
+.depoimento {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.fotousuario {
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
+.usuariodepoimento {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
-
+.fotousuario {
+     display: flex;
+  justify-content: center;
+}
 .fotousuario img {
-    height: 60px;
-    width: 60px;
+ 
+    width: 205px;
+    height: 205px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .nomeusuario {
-    padding-left: 15px;
+    text-align: center;
+    font-family: var(--texttitulo);
+    font-size: clamp(35px, 4vw, 45px);
 }
 
-.pergunta {
-    border: solid 4px var(--secundaria);
-    padding: 10px;
-    margin: 10px 0px;
-    max-width: 450px;
-    width: 450px;
-    height: auto;
+.mensagemusuario {
+    font-size: clamp(18px, 1vw, 18px);
+    text-align: center;
 }
-
-.mesagemusuario {
-    margin-left: 15px;
-    margin-top: 10px;
-}
-
-.resposta {
-    max-width: 345px;
-    margin-top: 15px;
+.legendadepoimento{
+   padding-left: 10px;
+    margin: 15px 0px;
+    text-align: center;
+    font-family: var(--texttitulo);
+    font-size: clamp(15px, 1.5vw, 25px);
 }
 
 
